@@ -1,0 +1,113 @@
+    #style-selector {
+        position: fixed;
+        top: 65px;
+        right: 0;
+        z-index: 9999;
+        -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, .3);
+                box-shadow: 0 5px 20px rgba(0, 0, 0, .3);
+    }
+    .style-selector-wrapper {
+        position: relative;
+        z-index: 9999;
+        display: inline-block;
+        background: #FFF;
+    }
+    .style-selector-wrapper > div {
+        margin: 25px 20px 25px 25px;
+    }
+    #style-selector a.close {
+        position: absolute;
+        top: 55px;
+        left: -34px;
+        width: 34px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        background: #fff;
+        border-radius: 3px 0 0 3px;
+        -webkit-box-shadow: 0 3px 12px rgba(0, 0, 0, .3);
+                box-shadow: 0 3px 12px rgba(0, 0, 0, .3);
+    }
+    #style-selector a.active {
+        box-shadow: 0 0 0 2px #000;
+    }
+    #style-selector h2 {
+        height: 40px;
+        background: #F2F2F2;
+        text-align: center;
+        font-size: 14px;
+        line-height: 40px;
+    }
+    #style-selector h3 {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        color: #959595;
+        text-align: center;
+        font-weight: normal;
+        font-size: 12px;
+    }
+    #style-selector ul {
+        width: 160px;
+    }
+    #style-selector .styles {
+        overflow: hidden;
+        margin: 0px 0px 10px 0px;
+    }
+    #style-selector .styles li {
+        float: left;
+    }
+    #style-selector .styles li a {
+        display: block;
+        margin: 3px;
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+    }
+    .layout select {
+        margin: 0 3px;
+        width: 100%;
+        font-size: 12px;
+    }
+    .bg-image img {
+        width: auto;
+        height: 100%;
+    }
+
+
+    .color-cf-blue      { background: #2f74a3; }
+    .color-cf-red       { background: #ff2c00; }
+    .color-cf-magenta   { background: #b90091; }
+    .color-cf-green     { background: #00bf32; }
+    .color-cf-orange    { background: #ff6a00; }
+
+
+    .color-yellow       { background: #fec901; }
+    .color-blue         { background: #2f74a3; }
+    .color-cream        { background: #e0dac9; }
+    .color-darkgray     { background: #333; }
+    .color-green        { background: #9bcc45; }
+    .color-lightgray    { background: #dbdcde; }
+    .color-orange       { background: #fe9601; }
+    .color-pink         { background: #ff9dbc; }
+    .color-red          { background: #d73300; }
+    .color-tan          { background: #d7ad7c; }
+
+    .bg-img01 { background: url("/assets/backgrounds/bg_img01_01.jpg"); background-size: 100% 100%; }
+    .bg-img02 { background: url("/assets/backgrounds/bg_img02.jpg"); background-size: 100% 100%; }
+    .bg-img03 { background: url("/assets/backgrounds/bg_img03.jpg"); background-size: 100% 100%; }
+    .bg-img04 { background: url("/assets/backgrounds/bg_img04.jpg"); background-size: 100% 100%; }
+    .bg-img05 { background: url("/assets/backgrounds/bg_img05.jpg"); background-size: 100% 100%; }
+    
+    .bg-pat01 { background: url("/assets/backgrounds/black_twill.png"); }
+    .bg-pat02 { background: url("/assets/backgrounds/bo_play_pattern.png"); }
+    .bg-pat03 { background: url("/assets/backgrounds/px_by_Gre3g.png"); }
+    .bg-pat04 { background: url("/assets/backgrounds/escheresque_ste.png"); }
+    .bg-pat05 { background: url("/assets/backgrounds/tex2res4.png"); }
+    .bg-pat06 { background: url("/assets/backgrounds/brick080.jpg"); }
+    .bg-pat07 { background: url("/assets/backgrounds/tweed.png"); }
+    .bg-pat08 { background: url("/assets/backgrounds/random_grey_variations.png"); }
+    .bg-pat09 { background: url("/assets/backgrounds/grey_wash_wall.png"); }
+    .bg-pat10 { background: url("/assets/backgrounds/triangular.png"); }
+
+
+
