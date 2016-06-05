@@ -1,22 +1,28 @@
 <head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Rifky Ekayama :: Web Developer & Professional Networking</title>
-	<meta name="description" content="" />
-	<meta name="author" content="" />
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+	<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
-	<!-- CSS -->
-	<link rel="stylesheet" href="{{ "/css/font-awesome.css" | prepend: site.baseurl }}">
-	<link rel="stylesheet" href="{{ "/css/jquery.fancybox.css" | prepend: site.baseurl }}">
-	<link rel="stylesheet" href="{{ "/css/foundation.css" | prepend: site.baseurl }}">
-	<link rel="stylesheet" href="{{ "/css/style.css" | prepend: site.baseurl }}">
-	<link rel="stylesheet" href="{{ "/css/colors/color-cf-blue.css" | prepend: site.baseurl }}">
-	<link rel="stylesheet" href="{{ "/css/styleselector.css" | prepend: site.baseurl }}">
-	<link rel="stylesheet" href="{{ "/css/jquery.fancybox-thumbs.css" | prepend: site.baseurl }}">
+	<!-- Bootstrap -->
+	<link href="{{ '/css/bootstrap.min.css' | prepend: site.baseurl }}" rel="stylesheet">
+	<!-- Material Design Icons -->
+	<link href="{{ '/fonts/material-design-iconic-font/css/material-design-iconic-font.min.css' | prepend: site.baseurl }}" rel="stylesheet">
+	<!-- Font Awesome -->
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+	<!-- Ionicons -->
+	<link href="{{ '/fonts/ionicons/css/ionicons.min.css' | prepend: site.baseurl }}" rel="stylesheet">
+	<!-- Owl Carousel -->
+	<link href="{{ '/css/owl.carousel.css' | prepend: site.baseurl }}" rel="stylesheet">
+	<link href="{{ '/css/owl.theme.default.css' | prepend: site.baseurl }}" rel="stylesheet">
+	<!-- Style.css -->
+	<link href="{{ '/css/style.css' | prepend: site.baseurl }}" rel="stylesheet">
 
-	<!-- Fonts -->
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css' />
-
-
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
 </head>

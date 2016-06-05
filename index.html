@@ -1,62 +1,39 @@
 ---
-layout: application
+layout: default
 ---
 
-<!-- Container -->
-<div class="vcard-container">
+<!-- <div class="home">
 
-  <!-- Social buttons column -->      
-  <div class="social-buttons">
-    <a href="#blog"><div class="blog"><i class="fa fa-pencil"></i></div></a>
-    <a target="_blank" href="https://web.facebook.com/rifky.ekayama"><div class="facebook"><i class="fa fa-facebook"></i></div></a>
-    <a target="_blank" href="https://twitter.com/RifkyEkayama"><div class="twitter"><i class="fa fa-twitter"></i></div></a>
-    <a target="_blank" href="http://id.linkedin.com/in/rifkyekayama"><div class="linkedin"><i class="fa fa-linkedin"></i></div></a>
-    <a onclick="Skype.tryAnalyzeSkypeUri('call', '0');" href="skype:rifqykiw1?call"><div class="skype"><i class="fa fa-skype"></i></div></a>
-    <!-- <a target="_blank" href="https://instagram.com/rifkyekayama"><div class="instagram"><i class="fa fa-instagram"></i></div></a> -->
-  </div>
-  <!-- /Social buttons column -->
-  
-  <!-- Main column -->
-  <div id="content" class="tab-container main-column">
+  <h1 class="page-heading">Posts</h1>
 
-    <!-- Top row -->
-    {% include komponen/navigation.html %}
-    <!-- /Top row -->
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-    <!-- Content -->
-    <div class="content">
-      <div class="panel-container">
-        {% include komponen/home.html %}
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
 
-        {% include komponen/about.html %}
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
-        {% include komponen/resume.html %}
+</div> -->
 
-        {% include komponen/portfolio.html %}
+{% include section/home.html %}
 
-        {% include komponen/contact.html %}
+{% include section/about.html %}
 
-        {% include komponen/feedback.html %}
+{% include section/skills.html %}
 
-      </div>
-    </div>
-    <!-- /Content -->
+{% include section/experience.html %}
 
-    <!-- Footer -->
-    <div id="footer">
-      <div class="triangle"></div>
-      <div class="copyright">© 2015 Rifky Ekayama. All rights reserved.</div>          
-    </div>
-    <!-- /Footer -->
+{% include section/education.html %}
 
-    <div class="clear dividewhite6"></div>
-  </div>
-  <!-- /Main column -->
+{% include section/portfolio.html %}
 
-</div>
-<!-- /Container -->
+{% include section/blog.html %}
 
-
-<!-- Back to Top -->
-<!-- <div id="back-top"><a href="#top"></a></div> -->
-<!-- /Back to Top -->
+{% include section/contact.html %}

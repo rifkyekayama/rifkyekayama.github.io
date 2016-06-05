@@ -5,15 +5,21 @@
 
   <body>
 
+    {% include search.html %}
+
+    {% include slideOut.html %}
+
     {% include header.html %}
 
-    <div class="page-content">
-      <div class="wrapper">
+    <div class="sections">
+      <div class="sections-wrapper clearfix">
         {{ content }}
-      </div>
-    </div>
+      </div> <!-- end .sections-wrapper -->
+    </div> <!-- end .sections -->
 
     {% include footer.html %}
+
+    {% include foot.html %}
 
   </body>
 
