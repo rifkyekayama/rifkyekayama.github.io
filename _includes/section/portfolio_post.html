@@ -1,0 +1,42 @@
+{% for portfolio in site.data.portfolio %}
+	<section id="{{ portfolio.name }}">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-8">
+					<div class="portfolio-slider owl-carousel">
+						<div><img src="images/portfolio-slider.jpg" alt="alt text" class="img-responsive"></div>
+						<div><img src="images/portfolio-slider.jpg" alt="alt text" class="img-responsive"></div>
+						<div><img src="images/portfolio-slider.jpg" alt="alt text" class="img-responsive"></div>
+					</div>
+					<!-- <div class="row related-images">
+						<div class="col-sm-6"><a href="#"><img src="images/portfolio-related01.jpg" alt="alt text" class="img-responsive"></a></div>
+						<div class="col-sm-6"><a href="#"><img src="images/portfolio-related02.jpg" alt="alt text" class="img-responsive"></a></div>
+					</div> -->
+				</div>
+				<div class="col-sm-4">
+					<div class="portfolio-details">
+						<h4>{{ portfolio.name }}</h4>
+						<p>{{ portfolio.desc }}</p>
+						<div class="portfolio-meta">
+							<span>Date:</span>
+							{{ portfolio.date | date: "%b %-d, %Y" }}
+						</div>
+						<div class="portfolio-meta">
+							<span>Client:</span>
+							{{ portfolio.client }}
+						</div>
+						<div class="portfolio-meta">
+							<span>Agency:</span>
+							{{ portfolio.agency }}
+						</div>
+						<div class="portfolio-meta">
+							<span>Type:</span>
+							{{ portfolio.category }}
+						</div>
+						<p><a href="{{ portfolio.url }}" class="button solid-button purple">Visit Website</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+{% endfor %}

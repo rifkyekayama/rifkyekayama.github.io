@@ -10,16 +10,13 @@
 				<div class="blog-post {{ imagePos | sample }}">
 					<div class="inner">
 						<a href="single-blog-post.html"><div class="image" style="background-image: url('images/blog-post-image01.jpg');"></div></a>
-						<div class="content">
+						<div class="content blogLink">
 							<span class="date">{{ post.date | date: "%b %-d, %Y" }}</span>
-							<h4><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h4>
+							<h4><a href="#{{ post.title }}">{{ post.title }}</a></h4>
 						</div> <!-- end .content -->
 					</div> <!-- end .inner -->
 				</div> <!-- end .blog-post -->
 			{% endfor %}
 		</div> <!-- end .blog-posts -->
-		<div class="blog-load-more">
-			<a href="single-blog-post.html" class="button solid-button white icon-right">Load More Posts<i class="md-refresh"></i></a>
-		</div> <!-- end .blog-load-more -->
 	</div> <!-- end .container -->
 </section> <!-- end #section1 -->

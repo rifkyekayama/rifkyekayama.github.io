@@ -231,6 +231,9 @@
 		$('.main-nav a').on('click', function() {
 			slide('mainNav', $(this));
 		});
+		$('.blogLink a').on('click', function() {
+			slide('mainNav', $(this));
+		});
 		$('.responsive-nav a').on('click', function() {
 			slide('mainNav', $(this));
 			$('body').removeClass('no-scroll');
