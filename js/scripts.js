@@ -231,7 +231,13 @@
 		$('.main-nav a').on('click', function() {
 			slide('mainNav', $(this));
 		});
-		$('.blogLink a').on('click', function() {
+		$('.portfolio-wrapper .portfolio .item a').on('click', function() {
+			slide('mainNav', $(this));
+		});
+		$('.blog-posts .blog-post .inner .blogLink a').on('click', function() {
+			slide('mainNav', $(this));
+		});
+		$('.blog-posts .blog-post .inner a').on('click', function() {
 			slide('mainNav', $(this));
 		});
 		$('.responsive-nav a').on('click', function() {
