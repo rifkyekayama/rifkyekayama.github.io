@@ -177,7 +177,7 @@
 			$('.sections-wrapper').css('width', vWidth * count).css('height', $('.sections-wrapper section.active').outerHeight());
 		}
 		function disableButtons(url) {
-			if (url == count) {
+			if (url == 8) {
 				$('.section-nav a.forward').addClass('disabled');
 				$('.section-nav a.backward').removeClass('disabled');
 			} else if (url == 1) {
@@ -216,13 +216,14 @@
 			$('.sections-wrapper section').removeClass('active');
 
 			if (!isNaN(url)){
-
+				$('.section-nav').show();
 				$('.main-nav .active').removeClass('active');
 				$('.responsive-nav .active').removeClass('active');
 				$('#section'+url).addClass('active');
 				$('.main-nav a[href="#section'+url+'"]').parent().addClass('active');
 				$('.responsive-nav a[href="#section'+url+'"]').parent().addClass('active');
 			} else {
+				$('.section-nav').hide();
 				$('#'+url).addClass('active');
 			}			
 			
