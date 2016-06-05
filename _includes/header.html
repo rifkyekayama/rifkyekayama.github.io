@@ -11,10 +11,10 @@
     <div class="popup">
       <nav class="social-nav">
         <ul class="list-unstyled">
-          <li><a target="_blank" href="https://web.facebook.com/rifky.ekayama">Facebook</a></li>
-          <li><a target="_blank" href="https://twitter.com/RifkyEkayama">Twitter</a></li>
-          <li><a target="_blank" href="http://id.linkedin.com/in/rifkyekayama">Linkedin</a></li>
-          <li><a onclick="Skype.tryAnalyzeSkypeUri('call', '0');" href="skype:rifqykiw1?call">Skype</a></li>
+          <li><a target="_blank" href="{{ site.facebook_link }}">Facebook</a></li>
+          <li><a target="_blank" href="{{ site.twitter_link }}">Twitter</a></li>
+          <li><a target="_blank" href="{{ site.linkedin_link }}">Linkedin</a></li>
+          <li><a onclick="Skype.tryAnalyzeSkypeUri('call', '0');" href="skype:{{ site.skype_username }}?call">Skype</a></li>
           <li><a href="#">Google+</a></li>
           <li><a href="#">Behance</a></li>
         </ul> <!-- end .list-unstyled -->
@@ -22,7 +22,7 @@
     </div> <!-- end .popup -->
   </div> <!-- end .top -->
   <div class="bottom clearfix">
-    <div class="title"><a href="index.html">Sility</a></div>
+    <div class="title"><a href="index.html">{{ site.title }}</a></div>
     <div class="header-action-button-wrapper">
       <a href="#" class="header-action-button action-button"><i class="md md-add"></i></a>
     </div> <!-- end .header-action-button-wrapper -->

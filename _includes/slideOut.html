@@ -11,9 +11,10 @@
 		<div class="slide-out-popup">
 			<nav class="social-nav">
 				<ul class="list-unstyled">
-					<li><a href="#">Facebook</a></li>
-					<li><a href="#">Twitter</a></li>
-					<li><a href="#">Linkedin</a></li>
+					<li><a target="_blank" href="{{ site.facebook_link }}">Facebook</a></li>
+					<li><a target="_blank" href="{{ site.twitter_link }}">Twitter</a></li>
+					<li><a target="_blank" href="{{ site.linkedin_link }}">Linkedin</a></li>
+					<li><a onclick="Skype.tryAnalyzeSkypeUri('call', '0');" href="skype:{{ site.skype_username }}?call">Skype</a></li>
 					<li><a href="#">Google+</a></li>
 					<li><a href="#">Behance</a></li>
 				</ul> <!-- end .list-unstyled -->
@@ -21,7 +22,7 @@
 		</div> <!-- end .slide-out-popup -->
 		<div class="image"><img src="/images/head01.png" alt="alt text" class="img-responsive"></div>
 		<div class="content">
-			<h5>Benjamin Thomson</h5>
+			<h5>{{ site.name }}</h5>
 			<span>Web & UX Designer</span>
 		</div> <!-- end .content -->
 		<div class="text-right">

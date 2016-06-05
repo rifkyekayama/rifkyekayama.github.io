@@ -6,16 +6,22 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Rifky Ekayama
-email: your-email@domain.com
+title: Rifky E.
+name: Rifky Ekayama
+email: rifkyekayama@gmail.com
+phone: +62-878-2193-6074
+address: Jl. Sriwijaya 1 No. 26 RT. 03/08 <br> KPAD Sriwijaya Kota Cimahi
 description: > # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+
+facebook_link: https://web.facebook.com/rifky.ekayama
+twitter_link: https://twitter.com/RifkyEkayama
+linkedin_link: http://id.linkedin.com/in/rifkyekayama
+skype_username: rifqykiw1
 
 # Build settings
 markdown: kramdown
