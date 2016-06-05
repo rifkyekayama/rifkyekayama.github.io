@@ -279,6 +279,7 @@
 		contactForm.find('.contact-loading').fadeIn();
 		if (validateEmail(contactForm.find('.contact-email').val()) && contactForm.find('.contact-email').val().length !== 0 && contactForm.find('.contact-name').val().length !== 0 && contactForm.find('.contact-message').val().length !== 0) {
 			var action = contactForm.attr('action');
+			alert(contactForm.find('.g-recaptcha').getResponse());
 			if(contactForm.find('.g-recaptcha').getResponse().length == 0){
 				contactForm.find('.contact-error').fadeOut();
 				contactForm.find('.contact-success').fadeOut();
