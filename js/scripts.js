@@ -207,13 +207,25 @@
 				sectionNum = sectionNum.replace( /[^\d.]/g, '' );
 				sectionNum = parseInt(sectionNum, 10);
 				url = sectionNum;
+			} else if ($type == 'content') {
+				var section = $this.attr('href');
+				section = section.replace( /#/g, '' );
+				url=section;
 			}
+
 			$('.sections-wrapper section').removeClass('active');
-			$('.main-nav .active').removeClass('active');
-			$('.responsive-nav .active').removeClass('active');
-			$('#section'+url).addClass('active');
-			$('.main-nav a[href="#section'+url+'"]').parent().addClass('active');
-			$('.responsive-nav a[href="#section'+url+'"]').parent().addClass('active');
+
+			if (!isNaN(url)){
+
+				$('.main-nav .active').removeClass('active');
+				$('.responsive-nav .active').removeClass('active');
+				$('#section'+url).addClass('active');
+				$('.main-nav a[href="#section'+url+'"]').parent().addClass('active');
+				$('.responsive-nav a[href="#section'+url+'"]').parent().addClass('active');
+			} else {
+				$('#'+url).addClass('active');
+			}			
+			
 			$('.sections-wrapper').css('height', $('.sections-wrapper section.active').outerHeight());
 			disableButtons(url);
 		}
@@ -232,10 +244,10 @@
 			slide('mainNav', $(this));
 		});
 		$('.portfolio-wrapper .portfolio .item a').on('click', function() {
-			slide('mainNav', $(this));
+			slide('content', $(this));
 		});
 		$('.blog-posts .blog-post .inner .blogLink a').on('click', function() {
-			slide('mainNav', $(this));
+			slide('content', $(this));
 		});
 		$('.responsive-nav a').on('click', function() {
 			slide('mainNav', $(this));

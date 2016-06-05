@@ -9,10 +9,10 @@
 			{% for post in site.posts %}
 				<div class="blog-post {{ imagePos | sample }}">
 					<div class="inner">
-						<a href="#{{ post.title }}"><div class="image" style="background-image: url('images/blog-post-image01.jpg');"></div></a>
+						<a href="#{{ post.title | handleize | replace:' ','-' | downcase }}"><div class="image" style="background-image: url('images/blog-post-image01.jpg');"></div></a>
 						<div class="content blogLink">
 							<span class="date">{{ post.date | date: "%b %-d, %Y" }}</span>
-							<h4><a href="#{{ post.title }}">{{ post.title }}</a></h4>
+							<h4><a href="#{{ post.title | handleize | replace:' ','-' | downcase }}">{{ post.title }}</a></h4>
 						</div> <!-- end .content -->
 					</div> <!-- end .inner -->
 				</div> <!-- end .blog-post -->

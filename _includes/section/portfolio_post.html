@@ -1,5 +1,5 @@
 {% for portfolio in site.data.portfolio %}
-	<section id="{{ portfolio.name }}" class="active">
+	<section id="{{ portfolio.name | handleize | replace:' ','-' | downcase }}">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-8">
@@ -8,10 +8,10 @@
 						<div><img src="images/portfolio-slider.jpg" alt="alt text" class="img-responsive"></div>
 						<div><img src="images/portfolio-slider.jpg" alt="alt text" class="img-responsive"></div>
 					</div>
-					<!-- <div class="row related-images">
+					<div class="row related-images">
 						<div class="col-sm-6"><a href="#"><img src="images/portfolio-related01.jpg" alt="alt text" class="img-responsive"></a></div>
 						<div class="col-sm-6"><a href="#"><img src="images/portfolio-related02.jpg" alt="alt text" class="img-responsive"></a></div>
-					</div> -->
+					</div>
 				</div>
 				<div class="col-sm-4">
 					<div class="portfolio-details">

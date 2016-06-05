@@ -14,7 +14,7 @@
 				{% for portfolio in site.data.portfolio %}
 					<div class="item {{ portfolio.category }}">
 						<img src="{{ portfolio.banner }}" alt="alt text" class="img-responsive">
-						<a href="#{{ portfolio.name }}" class="overlay">
+						<a href="#{{ portfolio.name | handleize | replace:' ','-' | downcase }}" class="overlay">
 							<div class="background"></div>
 							<div class="meta">
 								<span class="title">{{ portfolio.name }}</span>
