@@ -277,7 +277,6 @@
 		var contactForm = $(this);
 
 		if(captcha.length != 0){
-			alert("masuk null");
 			contactForm.find('.contact-error').fadeOut();
 			contactForm.find('.contact-success').fadeOut();
 			contactForm.find('.contact-loading').fadeOut();
@@ -322,7 +321,6 @@
 				contactForm.find('.contact-error').fadeIn();
 			}
 		}else if(captcha.length == 0){
-			alert("masuk not null");
 			contactForm.find('.contact-error').fadeOut();
 			contactForm.find('.contact-success').fadeOut();
 			contactForm.find('.contact-loading').fadeOut();
