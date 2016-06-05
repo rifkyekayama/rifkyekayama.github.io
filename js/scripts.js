@@ -279,26 +279,37 @@
 		contactForm.find('.contact-loading').fadeIn();
 		if (validateEmail(contactForm.find('.contact-email').val()) && contactForm.find('.contact-email').val().length !== 0 && contactForm.find('.contact-name').val().length !== 0 && contactForm.find('.contact-message').val().length !== 0) {
 			var action = contactForm.attr('action');
-			$.ajax({
-				type: "POST",
-				url : action,
-				data: {
-					name: contactForm.find('.contact-name').val(),
-					_replyto: contactForm.find('.contact-email').val(),
-					message: contactForm.find('.contact-message').val()
-				},
-				dataType: "json",
-				success: function() {
-					contactForm.find('.contact-loading').fadeOut();
-					contactForm.find('.contact-success').find('.message').html('Success! Thanks for contacting us!');
-					contactForm.find('.contact-success').fadeIn();
-				},
-				error: function() {
-					contactForm.find('.contact-loading').fadeOut();
-					contactForm.find('.contact-error').find('.message').html('Sorry, an error occurred.');
-					contactForm.find('.contact-error').fadeIn();
-				}
-			});
+			if(contactForm.find('.g-recaptcha').getResponse().length == 0){
+				contactForm.find('.contact-error').fadeOut();
+				contactForm.find('.contact-success').fadeOut();
+				contactForm.find('.contact-loading').fadeOut();
+				contactForm.find('.contact-error').find('.message').html("You can't leave Captcha Code empty.");
+				contactForm.find('.contact-error').fadeIn();
+			}else{
+				contactForm.find('.contact-error').fadeOut();
+				contactForm.find('.contact-success').fadeOut();
+				contactForm.find('.contact-loading').fadeOut();
+				$.ajax({
+					type: "POST",
+					url : action,
+					data: {
+						name: contactForm.find('.contact-name').val(),
+						_replyto: contactForm.find('.contact-email').val(),
+						message: contactForm.find('.contact-message').val()
+					},
+					dataType: "json",
+					success: function() {
+						contactForm.find('.contact-loading').fadeOut();
+						contactForm.find('.contact-success').find('.message').html('Success! Thanks for contacting us!');
+						contactForm.find('.contact-success').fadeIn();
+					},
+					error: function() {
+						contactForm.find('.contact-loading').fadeOut();
+						contactForm.find('.contact-error').find('.message').html('Sorry, an error occurred.');
+						contactForm.find('.contact-error').fadeIn();
+					}
+				});
+			}
 		} else if (!validateEmail(contactForm.find('.contact-email').val()) && contactForm.find('.contact-email').val().length !== 0 && contactForm.find('.contact-name').val().length !== 0 && contactForm.find('.contact-message').val().length !== 0) {
 			contactForm.find('.contact-error').fadeOut();
 			contactForm.find('.contact-success').fadeOut();
