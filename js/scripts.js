@@ -349,7 +349,7 @@
 				position: myLatLng,
 				map: map,
 				title: 'Envato',
-				icon: './images/marker.png'
+				icon: $(".map").attr("data-marker")
 			});
 		} else {
 			return false;
