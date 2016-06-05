@@ -237,9 +237,6 @@
 		$('.blog-posts .blog-post .inner .blogLink a').on('click', function() {
 			slide('mainNav', $(this));
 		});
-		$('.blog-posts .blog-post .inner a').on('click', function() {
-			slide('mainNav', $(this));
-		});
 		$('.responsive-nav a').on('click', function() {
 			slide('mainNav', $(this));
 			$('body').removeClass('no-scroll');
