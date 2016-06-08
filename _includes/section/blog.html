@@ -1,22 +1,73 @@
-<!-- Blog -->
-<section id="section7">
-	<div class="container">
-		<h2>Blog Post</h2>
-		<div class="blog-posts masonry" id="blog-masonry">
-			<div class="blog-grid-sizer"></div>
-			{% assign imagePos = "image-left,image-top,image-right" | split: "," %}
+<section id="blog" class="section section-blog">
+	<div class="animate-up">
+		<h2 class="section-title">From The Blog</h2>
 
-			{% for post in site.posts %}
-				<div class="blog-post {{ imagePos | sample }}">
-					<div class="inner">
-						<a href="#{{ post.title | handleize | replace:' ','-' | downcase }}"><div class="image" style="background-image: url('images/blog-post-image01.jpg');"></div></a>
-						<div class="content blogLink">
-							<span class="date">{{ post.date | date: "%b %-d, %Y" }}</span>
-							<h4><a href="#{{ post.title | handleize | replace:' ','-' | downcase }}">{{ post.title }}</a></h4>
-						</div> <!-- end .content -->
-					</div> <!-- end .inner -->
-				</div> <!-- end .blog-post -->
-			{% endfor %}
-		</div> <!-- end .blog-posts -->
-	</div> <!-- end .container -->
-</section> <!-- end #section1 -->
+        <div class="blog-grid">
+            <div class="grid-sizer"></div>
+            <div class="grid-item">
+                <article class="post-box">
+                    <div class="post-media">
+                        <div class="post-image">
+                            <a href="single.html"><img src="img/uploads/thumb-449x286-1.jpg" alt=""> </a>
+                        </div>
+                    </div>
+
+                    <div class="post-data">
+                        <time class="post-datetime" datetime="2015-03-13T07:44:01+00:00">
+                            <span class="day">03</span>
+                            <span class="month">MAY</span>
+                        </time>
+
+                        <div class="post-tag">
+                            <a href="#">#Photo</a>
+                            <a href="#">#Architect</a>
+                        </div>
+
+                        <h3 class="post-title">
+                            <a href="single-image.html">Image Post</a>
+                        </h3>
+
+                        <div class="post-info">
+                            <a href="#"><i class="icon icon-user"></i>by admin</a>
+                            <a href="#"><i class="icon icon-comments"></i>56</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="grid-item">
+                <article class="post-box">
+                    <div class="post-media">
+                        <div class="post-image">
+                            <a href="single-vimeo.html">
+                                <img src="img/uploads/thumb-449x286-5.jpg" alt="">
+                                <span class="post-type-icon"><i class="icon icon-play"></i></span>
+                            </a>
+                        </div>
+                    </div>
+
+					<div class="post-data">
+						<time class="post-datetime" datetime="2015-03-13T07:44:01+00:00">
+							<span class="day">03</span>
+							<span class="month">MAY</span>
+						</time>
+
+						<div class="post-tag">
+							<a href="#">#Photo</a>
+							<a href="#">#Architect</a>
+						</div>
+
+						<h3 class="post-title">
+							<a href="single-vimeo.html">Vimeo Video Post</a>
+						</h3>
+
+						<div class="post-info">
+							<a href="#"><i class="icon icon-user"></i>by admin</a>
+							<a href="#"><i class="icon icon-comments"></i>56</a>
+						</div>
+					</div>
+				</article>
+			</div>
+		</div>
+	</div>	
+</section><!-- #blog -->
