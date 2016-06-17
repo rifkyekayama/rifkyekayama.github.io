@@ -10,23 +10,23 @@
 						<div class="profile-info">
 							<div class="profile-preword"><span>Hello</span></div>
 							<h1 class="profile-title"><span>I'm</span> Robert Smith</h1>
-							<h2 class="profile-position">Developer and businessman</h2></div>
+							<h2 class="profile-position">{{ site.jobdesk }}</h2></div>
                             <ul class="profile-list">
                                 <li class="clearfix">
                                     <strong class="title">Age</strong>
-                                    <span class="cont">29</span>
+                                    <span class="cont">{{ site.age }}</span>
                                 </li>
                                 <li class="clearfix">
                                     <strong class="title">Address</strong>
-                                    <span class="cont">24058, Belgium, Brussels, Liutte 27, BE</span>
+                                    <span class="cont">{{ site.address }}</span>
                                 </li>
                                 <li class="clearfix">
                                     <strong class="title">E-mail</strong>
-                                    <span class="cont"><a href="mailto:robertsmith@company.com">robertsmith@company.com</a></span>
+                                    <span class="cont"><a href="mailto:{{ site.email }}">{{ site.email }}</a></span>
                                 </li>
                                 <li class="clearfix">
                                     <strong class="title">Phone</strong>
-                                    <span class="cont"><a href="tel:+12562548456">+1 256 254 84 56</a></span>
+                                    <span class="cont"><a href="tel:{{ site.phone }}">{{ site.phone }}</a></span>
                                 </li>
                                 <li class="clearfix">
                                     <strong class="title">Freelance</strong>
@@ -42,12 +42,12 @@
 			</div>
 			<div class="profile-social">
 				<ul class="social">
-					<li><a class="ripple-centered" href="https://www.facebook.com/" target="_blank"><i class="icon icon-facebook"></i></a></li>
-					<li><a class="ripple-centered" href="https://twitter.com/" target="_blank"><i class="icon icon-twitter"></i></a></li>
-					<li><a class="ripple-centered" href="https://www.linkedin.com/" target="_blank"><i class="icon icon-linkedin"></i></a></li>
+					<li><a class="ripple-centered" href="{{ site.facebook_link }}" target="_blank"><i class="icon icon-facebook"></i></a></li>
+					<li><a class="ripple-centered" href="{{ site.twitter_link }}" target="_blank"><i class="icon icon-twitter"></i></a></li>
+					<li><a class="ripple-centered" href="{{ site.linkedin_link }}" target="_blank"><i class="icon icon-linkedin"></i></a></li>
 					<li><a class="ripple-centered" href="https://plus.google.com/" target="_blank"><i class="icon icon-google-plus"></i></a></li>
-					<li><a class="ripple-centered" href="https://dribbble.com/" target="_blank"><i class="icon icon-dribbble"></i></a></li>
-					<li><a class="ripple-centered" href="https://www.instagram.com/" target="_blank"><i class="icon icon-instagram"></i></a></li>
+					<li><a class="ripple-centered" href="skype:{{ site.skype_username }}?call" target="_blank"><i class="icon icon-skype"></i></a></li>
+					<li><a class="ripple-centered" href="{{ site.instagram_link }}" target="_blank"><i class="icon icon-instagram"></i></a></li>
 				</ul>
 			</div>
 		</div>
