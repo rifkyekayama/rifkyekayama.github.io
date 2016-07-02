@@ -7,6 +7,7 @@
 
 # Site settings
 title: Your awesome title
+email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
@@ -15,22 +16,6 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
-
-# My Identity
-name: Rifky Ekayama
-jobdesk: Backend Web Programmer
-age: 22
-email: rifky.ekayama@gmail.com
-phone: +6287821936074
-address: Jl. Sriwijaya 1 No. 26 KPAD Sriwijaya
-
-# Social Link
-facebook_link: https://web.facebook.com/rifky.ekayama
-twitter_link: https://twitter.com/RifkyEkayama
-linkedin_link: http://id.linkedin.com/in/rifkyekayama
-instagram_link: https://www.instagram.com/rifkyekayama
-skype_username: rifqykiw1
-
 
 # Build settings
 markdown: kramdown

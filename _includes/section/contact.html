@@ -1,66 +1,120 @@
-<section id="contact" class="section section-contact">
-	<div class="animate-up">
-		<h2 class="section-title">Contact Me</h2>
+<!-- #contact -->
+<section id="contact" class="layers">
 
-		<div class="row">
-			<div class="col-sm-6">
-				<div class="section-box contact-form">
-					<h3>Feel free to contact me</h3>
-					
-					<form class="contactForm" action="http://rscard.px-lab.com/php/contact_form.php" method="post">
-						<div class="input-field">
-							<input class="contact-name" type="text" name="name"/>
-							<span class="line"></span>
-							<label>Name</label>
-						</div>
+	<h2 style="display:none">contact</h2>
 
-						<div class="input-field">
-							<input class="contact-email" type="email" name="email"/>
-							<span class="line"></span>
-							<label>Email</label>
-						</div>
+	<!-- .page_content -->
+	<div class="page_content">
 
-						<div class="input-field">
-							<input class="contact-subject" type="text" name="subject"/>
-							<span class="line"></span>
-							<label>Subject</label>
-						</div>
+		<!-- #contact -->
+		<div id="contacts">
 
-						<div class="input-field">
-							<textarea class="contact-message" rows="4" name="message"></textarea>
-							<span class="line"></span>
-							<label>Message</label>
-						</div>
+			<div id="mapContainer">
 
-						<span class="btn-outer btn-primary-outer ripple">
-							<input class="contact-submit btn btn-lg btn-primary" type="submit" value="Send"/>
-						</span>
-						
-						<div class="contact-response"></div>
-					</form>
+				<div id="tabs" class="tab_close" title="" data-toggle="tooltip" data-original-title="Send Message">
+					<i class="fa fa-envelope"></i>
 				</div>
+
+				<div id="tabs_resp" class="tab_close" title="" data-toggle="tooltip" data-original-title="Send Message">
+					<i class="fa fa-envelope"></i>
+				</div>
+
+				<div id="map_canvas"></div>
 			</div>
 
-			<div class="col-sm-6">
-				<div class="section-box contact-info has-map">
-					<ul class="contact-list">
-						<li class="clearfix">
-							<strong>Address</strong>
-							<span>Belgium, Brussels, Liutte 27, BE</span>
-						</li>
-						<li class="clearfix">
-							<strong>phone</strong>
-							<span><a href="tel:+12562548456">+1 256 254 84 56</a></span>
-						</li>
-						<li class="clearfix">
-							<strong>E-mail</strong>
-							<span><a href="mailto:robertsmith@company.com">robertsmith@company.com</a></span>
-						</li>
-					</ul>
 
-					<div id="map" data-latitude="50.84592" data-longitude="4.366859999999974"></div>
+			<div id="contentContact" class="two">
+
+				<div class="contact_closed" id="contact_closed" title="Close Contact" data-toggle="tooltip">
+					<i class="fa fa-times"></i>
 				</div>
+
+				<div class="innerpadding">
+
+					<div class="separte-content">
+						<h2>Let’s be social</h2>
+
+						<!-- social-ul -->
+						<div class="social-ul" id="contact_social_ul">
+							<ul>
+								<li class="social-twitter"><a href="#" target="_blank" title="" data-toggle="tooltip" data-original-title="Twitter"><i class="fa fa-twitter"></i></a></li>
+								<li class="social-facebook"><a href="#" target="_blank" title="" data-toggle="tooltip" data-original-title="Facebook"><i class="fa fa-facebook"></i></a></li>
+								<li class="social-google"><a href="#" target="_blank" title="" data-toggle="tooltip" data-original-title="Google Plus"><i class="fa fa-google-plus"></i></a></li>
+								<li class="social-linkedin"><a href="#" target="_blank" title="" data-toggle="tooltip" data-original-title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+								<li class="social-dribbble"><a href="#" target="_blank" title="" data-toggle="tooltip" data-original-title="Dribbble"><i class="fa fa-dribbble"></i></a></li>
+								<li class="social-behance"><a href="#" target="_blank" title="" data-toggle="tooltip" data-original-title="Behance"><i class="fa fa-behance"></i></a></li>
+								<li class="social-pinterest"><a href="#" target="_blank" title="" data-toggle="tooltip" data-original-title="Pinterest"><i class="fa fa-pinterest"></i></a></li>
+								<li class="social-github"><a href="#" target="_blank" title="" data-toggle="tooltip" data-original-title="Github"><i class="fa fa-github"></i></a></li>
+								<li class="social-flickr"><a href="#" target="_blank" title="" data-toggle="tooltip" data-original-title="Flickr"><i class="fa fa-flickr"></i></a></li>
+								<!--<li class="social-vine"><a href="#" target="_blank" title="" data-toggle="tooltip" data-original-title="Vine"><i class="fa fa-vine"></i></a></li>-->
+							</ul>
+						</div>
+						<!-- End social-ul -->
+					</div>
+
+
+					<div class="separte-content">
+						<!-- Send a Message -->
+						<h2>Send a Message</h2>
+
+						<div id="contact-status"></div>
+
+						<form action="#" id="contactform" class="contact-form">                  
+
+							<div class="row form-group">
+
+								<div class="col-md-12 col-sm-12 col-xs-12 form-group" id="contact-name">
+									<i class="fa fa-user icon-contact"></i>
+									<input type="text" name="name" class="form-control name-contact" style="margin-top: 0;" placeholder="Name..." />
+								</div>          
+
+								<div class="col-md-12 col-sm-12 col-xs-12 form-group" id="contact-email">
+									<i class="fa fa-envelope icon-contact"></i>
+									<input type="text" name="email" class="form-control email-contact" placeholder="Email..." />
+								</div>  
+
+								<div class="col-md-12 col-sm-12 col-xs-12 form-group" id="contact-subject">
+									<i class="fa fa-question icon-contact"></i>
+									<input type="text" name="subject" class="form-control subject-contact" placeholder="Subject..." />
+								</div>  
+
+								<div class="col-md-12 col-sm-12 col-xs-12 form-group" id="contact-message">
+									<i class="fa fa-comments icon-contact"></i>
+									<textarea name="message" cols="90" rows="10" class="form-control message-contact" id="inputError" placeholder="Message..."></textarea>
+								</div> 
+
+								<div class="col-md-12 col-sm-12 col-xs-12 form-group" style="margin-bottom: 0;">
+									<button type="submit" class="btn btn-block btn-cta btn-cta-contact-2">Send<i class="fa fa-angle-right"></i></button>
+								</div>   
+
+							</div><!--//row-->
+
+						</form><!--//contact-form-->
+
+						<!-- End Send a Message -->
+
+					</div>
+
+
+					<div class="collapser">
+
+						<h2>other way</h2>
+
+						<ul class="info_contact">
+							<li><span><i class="fa fa-map-marker"></i></span> 44 E. 8th Street Suite 300 Holland.</li>
+							<li><span><i class="fa fa-phone"></i></span> +1-888-999-7776</li>
+							<li><span><i class="glyphicon glyphicon-phone"></i></span> +1-888-999-7776</li>
+							<li><span><i class="fa fa-envelope"></i></span> info@loremips.com</li>
+							<li><span><i class="fa fa-globe"></i></span> <a href="#">www.loremips.com</a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- end .innerpadding -->
 			</div>
+			<!-- end #contentContact -->
 		</div>
-	</div>	
-</section><!-- #contact -->
+		<!-- #contact -->
+	</div>
+	<!-- .page_content -->
+</section>
+<!-- End #contact -->

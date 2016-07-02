@@ -1,29 +1,39 @@
 <!DOCTYPE html>
-<html lang="en" class="theme-color-07cb79 theme-skin-light">
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="ie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
 
-  {% include head.html %}
+	{% include head.html %}
 
-  <body>
+	<body>
 
-    {% include mobile-nav.html %}
+		<!--[if lt IE 7]>
+				<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
 
-    {% include sidebar.html %}
+		<!-- Laoding page  -->
+		<div class="preloader">
+			<div class="spinner">
+				<div class="dot1"></div>
+				<div class="dot2"></div>
+			</div>
+		</div>
+		<!-- End Laoding page  -->
 
-    <div class="wrapper">
+		<!-- #wrappers -->
+		<div id="wrappers">
 
-      {% include header.html %}
-    
-      <div class="content">
-        <div class="container">
-          {{ content }}
-        </div>
-      </div>
-    
-      {% include footer.html %}
-    
-    </div>
+			{% include header.html %}
 
-    {% include foot.html %}
-  </body>
+			<!-- #main -->
+			<div id="main">
 
+				{{ content }}
+				
+			</div>
+			<!-- End #main -->
+		</div>
+		<!-- End #wrappers -->
+		{% include foot.html %}
+	</body>
 </html>
