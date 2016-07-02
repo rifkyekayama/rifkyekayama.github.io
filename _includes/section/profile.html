@@ -48,14 +48,14 @@
 					<div class="bg_info clearfix">
 						<div class="inner-text">
 							<ul>
-								<li class="user_name"><strong><i class="fa fa-user"></i>Name</strong> : john doe</li>
-								<li><strong><i class="fa fa-calendar"></i>Birthdate</strong> : March 18, 1988</li>
-								<li><strong><i class="fa fa-phone"></i>Phone</strong> : +123 (21) 1234-5678</li>
-								<li><strong><i class="glyphicon glyphicon-phone"></i>Mobile</strong> : +123 (21) 1234-5679</li>
-								<li><strong><i class="fa fa-skype"></i>Skype</strong> : John_Doe</li>
-								<li><strong><i class="fa fa-envelope"></i>Email</strong> : john.doe@gmail.com</li>
-								<li><strong><i class="fa fa-globe"></i>Website</strong> : <a href="#" target="_blank">www.anderson-smith.com</a></li>
-								<li><strong><i class="glyphicon glyphicon-map-marker"></i>Adresse</strong> : 1732 Monroe Street Houston, TX 77055.</li>
+								<li class="user_name"><strong><i class="fa fa-user"></i>Name</strong> : {{ site.name }}</li>
+								<li><strong><i class="fa fa-calendar"></i>Birthdate</strong> : {{ site.birthdate }}</li>
+								<li><strong><i class="fa fa-phone"></i>Phone</strong> : {{ site.phone }}</li>
+								<li><strong><i class="fa fa-whatsapp"></i>Whatsapp</strong> : {{ site.phone }}</li>
+								<li><strong><i class="fa fa-skype"></i>Skype</strong> : {{ site.skype_username }}</li>
+								<li><strong><i class="fa fa-envelope"></i>Email</strong> : {{ site.email }}</li>
+								<li><strong><i class="fa fa-globe"></i>Website</strong> : <a href="{{ site.url }}" target="_blank">{{ site.url }}</a></li>
+								<li><strong><i class="glyphicon glyphicon-map-marker"></i>Address</strong> : {{ site.address }}</li>
 							</ul>
 						</div>
 					</div>
@@ -64,12 +64,12 @@
 					<!-- .header_social_ul -->
 					<div class="social-ul bg_social" id="profile_social_ul">
 						<ul>
-							<li class="social-twitter"><a href="#" target="_blank" title="" data-toggle="tooltip" data-original-title="Twitter"><i class="fa fa-twitter"></i></a></li>
-							<li class="social-facebook"><a href="#" target="_blank" title="" data-toggle="tooltip" data-original-title="Facebook"><i class="fa fa-facebook"></i></a></li>
-							<li class="social-google"><a href="#" target="_blank" title="" data-toggle="tooltip" data-original-title="Google Plus"><i class="fa fa-google-plus"></i></a></li>
-							<li class="social-linkedin"><a href="#" target="_blank" title="" data-toggle="tooltip" data-original-title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
-							<li class="social-dribbble"><a href="#" target="_blank" title="" data-toggle="tooltip" data-original-title="Dribbble"><i class="fa fa-dribbble"></i></a></li>
-							<li class="social-behance"><a href="#" target="_blank" title="" data-toggle="tooltip" data-original-title="Behance"><i class="fa fa-behance"></i></a></li>
+							<li class="social-twitter"><a href="{{ site.twitter_link }}" target="_blank" title="" data-toggle="tooltip" data-original-title="Twitter"><i class="fa fa-twitter"></i></a></li>
+							<li class="social-facebook"><a href="{{ site.facebook_link }}" target="_blank" title="" data-toggle="tooltip" data-original-title="Facebook"><i class="fa fa-facebook"></i></a></li>
+							<li class="social-google"><a href="{{ site.googleplus_link }}" target="_blank" title="" data-toggle="tooltip" data-original-title="Google Plus"><i class="fa fa-google-plus"></i></a></li>
+							<li class="social-linkedin"><a href="{{ site.linkedin_link }}" target="_blank" title="" data-toggle="tooltip" data-original-title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+							<li class="social-instagram"><a href="{{ site.instagram_link }}" target="_blank" title="" data-toggle="tooltip" data-original-title="Instagram"><i class="fa fa-instagram"></i></a></li>
+							<li class="social-skype"><a onclick="Skype.tryAnalyzeSkypeUri('call', '0');" href="skype:{{ site.skype_username }}?call" title="" data-toggle="tooltip" data-original-title="Skype"><i class="fa fa-skype"></i></a></li>
 						</ul>
 					</div>
 					<!-- End .header_social_ul -->

@@ -522,6 +522,11 @@ Navigation
 #header .social-ul ul li.social-youtube a:hover { background-color:#cc181e; }
 #header .social-ul ul li.social-flickr a:hover { background-color:#ff0084; }
 #header .social-ul ul li.social-vine  a:hover{ background-color:#00a478; }
+/*Tambahan*/
+#header .social-ul ul li.social-instagram  a:hover{ background-color:#b28669; }
+#header .social-ul ul li.social-skype  a:hover{ background-color:#00aaf1; }
+#header .social-ul ul li.social-gitlab  a:hover{ background-color:#fc6d26; }
+#header .social-ul ul li.social-bitbucket  a:hover{ background-color:#1f5081; }
 
 /* Copyright */
 
@@ -3077,6 +3082,11 @@ hr.separate_port {
 #contentContact .innerpadding #contacts_social_ul ul li.social-youtube a:hover { background-color:#cc181e !important; }
 #contentContact .innerpadding #contacts_social_ul ul li.social-flickr a:hover { background-color:#ff0084 !important; }
 #contentContact .innerpadding #contacts_social_ul ul li.social-vine  a:hover{ background-color:#00a478 !important; }
+/*Tambahan*/
+#contentContact .innerpadding #contacts_social_ul ul li.social-instagram  a:hover{ background-color:#b28669; }
+#contentContact .innerpadding #contacts_social_ul ul li.social-skype  a:hover{ background-color:#00aaf1; }
+#contentContact .innerpadding #contacts_social_ul ul li.social-gitlab  a:hover{ background-color:#fc6d26; }
+#contentContact .innerpadding #contacts_social_ul ul li.social-bitbucket  a:hover{ background-color:#1f5081; }
 
 #contentContact .innerpadding h2 {
     font-size: 15px;
@@ -3449,6 +3459,11 @@ img {
 #contact_social_ul ul li.social-youtube a:hover { background-color:#cc181e !important; }
 #contact_social_ul ul li.social-flickr a:hover { background-color:#ff0084 !important; }
 #contact_social_ul ul li.social-vine  a:hover{ background-color:#00a478 !important; }
+/*Tambahan*/
+#contact_social_ul ul li.social-instagram  a:hover{ background-color:#b28669; }
+#contact_social_ul ul li.social-skype  a:hover{ background-color:#00aaf1; }
+#contact_social_ul ul li.social-gitlab  a:hover{ background-color:#fc6d26; }
+#contact_social_ul ul li.social-bitbucket  a:hover{ background-color:#1f5081; }
 
 
 /*
