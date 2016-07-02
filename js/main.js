@@ -310,13 +310,13 @@ jQuery(document).ready(function($) {
 
 
 		var mapOptions = {
-			zoom: 14,
-			center: new google.maps.LatLng(-37.815921, 144.964085),
+			zoom: 15,
+			center: new google.maps.LatLng(-6.8807938,107.5344075),
 			mapTypeId: google.maps.MapTypeId.ROADMAP
 		}
 		var map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
 		var marker = new google.maps.Marker({
-			position: new google.maps.LatLng(-37.815921, 144.964085),
+			position: new google.maps.LatLng(-6.8807938,107.5344075),
 			map: map,
 			title: '44 E. 8th Street Suite 300 Holland.',
 			icon: 'images/map-marker.png'
