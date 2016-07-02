@@ -59,6 +59,24 @@
 
 						<div id="contact-status"></div>
 
+						<div class="alert alert-danger error-send" id="alert-error" style="display:none">
+							<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+							<i class="glyphicon glyphicon-remove" style="margin-right: 5px;"></i>
+							<span class="message">Loading...</span>
+						</div>
+
+						<div class="alert alert-success success-send" id="alert-success" style="display:none">
+							<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+							<i class="glyphicon glyphicon-ok" style="margin-right: 5px;"></i>
+							<span class="message">Loading...</span>
+						</div>
+
+						<div class="alert alert-info info-send" id="alert-loading" style="display:none">
+							<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+							<i class="glyphicon glyphicon-clock" style="margin-right: 5px;"></i>
+							<span class="message">Loading...</span>
+						</div>
+
 						<form action="#" id="contactform" class="contact-form">                  
 
 							<div class="row form-group">
@@ -81,7 +99,11 @@
 								<div class="col-md-12 col-sm-12 col-xs-12 form-group" id="contact-message">
 									<i class="fa fa-comments icon-contact"></i>
 									<textarea name="message" cols="90" rows="10" class="form-control message-contact" id="inputError" placeholder="Message..."></textarea>
-								</div> 
+								</div>
+
+								<!-- <div class="col-md-12 col-sm-12 col-xs-12 form-group" id="contact-recaptcha">
+									<div class="g-recaptcha" data-sitekey="6LfPySETAAAAAPmO6oLlGaqD67zzPIvjQaVkpnqO"></div>
+								</div> -->
 
 								<div class="col-md-12 col-sm-12 col-xs-12 form-group" style="margin-bottom: 0;">
 									<button type="submit" class="btn btn-block btn-cta btn-cta-contact-2">Send<i class="fa fa-angle-right"></i></button>
