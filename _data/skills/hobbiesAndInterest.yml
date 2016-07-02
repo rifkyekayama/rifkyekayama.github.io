@@ -1,0 +1,11 @@
+- name: Reading
+  value: 70%
+
+- name: Biking
+  value: 60%
+
+- name: Running
+  value: 80%
+
+- name: Swimming
+  value: 70%

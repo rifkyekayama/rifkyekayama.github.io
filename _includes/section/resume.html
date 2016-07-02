@@ -112,40 +112,16 @@
 				</div>
 
 				<div class="skills">
-				<!-- .skillbar -->
-				<div class="skillbar clearfix" data-percent="95%">
-					<div class="skillbar-title"><span>Photoshop</span></div>
-					<div class="skillbar-bar"></div>
-					<div class="skill-bar-percent">95%</div>
+					{% for designs in site.data.skills.designsSkills %}
+						<!-- .skillbar -->
+						<div class="skillbar clearfix" data-percent="{{ designs.value }}">
+							<div class="skillbar-title"><span>{{ designs.name }}</span></div>
+							<div class="skillbar-bar"></div>
+							<div class="skill-bar-percent">{{ designs.value }}</div>
+						</div>
+						<!-- /.skillbar -->
+					{% endfor %}
 				</div>
-
-				<!-- /.skillbar -->
-
-				<!-- .skillbar -->
-				<div class="skillbar clearfix" data-percent="90%">
-					<div class="skillbar-title"><span>Illustrateur</span></div>
-					<div class="skillbar-bar"></div>
-					<div class="skill-bar-percent">90%</div>
-				</div>
-				<!-- /.skillbar -->
-
-				<!-- .skillbar -->
-				<div class="skillbar clearfix" data-percent="65%">
-					<div class="skillbar-title"><span>Indesign</span></div>
-					<div class="skillbar-bar"></div>
-					<div class="skill-bar-percent">65%</div>
-				</div>
-				<!-- /.skillbar -->
-
-				<!-- .skillbar -->
-				<div class="skillbar clearfix" data-percent="35%">
-					<div class="skillbar-title"><span>Flash</span></div>
-					<div class="skillbar-bar"></div>
-					<div class="skill-bar-percent">35%</div>
-				</div>
-				<!-- /.skillbar -->
-				</div>
-
 
 				<!-- .title_content -->
 				<div class="title-section">
@@ -155,37 +131,15 @@
 				<!-- /.title_content -->
 
 				<div class="skills">
-				<!-- .skillbar -->
-				<div class="skillbar clearfix" data-percent="85%">
-					<div class="skillbar-title"><span>Wordpress</span></div>
-					<div class="skillbar-bar"></div>
-					<div class="skill-bar-percent">85%</div>
-				</div>
-				<!-- /.skillbar -->
-
-				<!-- .skillbar -->
-				<div class="skillbar clearfix" data-percent="75%">
-					<div class="skillbar-title"><span>Joomla</span></div>
-					<div class="skillbar-bar"></div>
-					<div class="skill-bar-percent">75%</div>
-				</div>
-				<!-- /.skillbar -->
-
-				<!-- .skillbar -->
-				<div class="skillbar clearfix" data-percent="60%">
-					<div class="skillbar-title"><span>Drupal</span></div>
-					<div class="skillbar-bar"></div>
-					<div class="skill-bar-percent">60%</div>
-				</div>
-				<!-- /.skillbar -->
-
-				<!-- .skillbar -->
-				<div class="skillbar clearfix" data-percent="89%">
-					<div class="skillbar-title"><span>Php</span></div>
-					<div class="skillbar-bar"></div>
-					<div class="skill-bar-percent">89%</div>
-				</div>
-				<!-- /.skillbar --> 
+					{% for programming in site.data.skills.programmingSkills %}
+						<!-- .skillbar -->
+						<div class="skillbar clearfix" data-percent="{{ programming.value }}">
+							<div class="skillbar-title"><span>{{ programming.name }}</span></div>
+							<div class="skillbar-bar"></div>
+							<div class="skill-bar-percent">{{ programming.value }}</div>
+						</div>
+						<!-- /.skillbar -->
+					{% endfor%}
 				</div>
 
 				<!-- .title_content -->
@@ -195,38 +149,16 @@
 				</div>
 				<!-- /.title_content -->
 
-				<div class="skills">       
-				<!-- .skillbar -->
-				<div class="skillbar clearfix" data-percent="85%">
-					<div class="skillbar-title"><span>MS Excel</span></div>
-					<div class="skillbar-bar"></div>
-					<div class="skill-bar-percent">85%</div>
-				</div>
-				<!-- /.skillbar -->
-
-				<!-- .skillbar -->
-				<div class="skillbar clearfix " data-percent="95%">
-					<div class="skillbar-title"><span>MS Word</span></div>
-					<div class="skillbar-bar"></div>
-					<div class="skill-bar-percent">95%</div>
-				</div>
-				<!-- /.skillbar -->
-
-				<!-- .skillbar -->
-				<div class="skillbar clearfix " data-percent="60%">
-					<div class="skillbar-title"><span>Powerpoint</span></div>
-					<div class="skillbar-bar"></div>
-					<div class="skill-bar-percent">60%</div>
-				</div>
-				<!-- /.skillbar -->
-
-				<!-- .skillbar -->
-				<div class="skillbar clearfix " data-percent="40%">
-					<div class="skillbar-title"><span>SharePoint</span></div>
-					<div class="skillbar-bar"></div>
-					<div class="skill-bar-percent">40%</div>
-				</div>
-				<!-- /.skillbar -->   
+				<div class="skills">  
+					{% for office in site.data.skills.officeSkills %}
+						<!-- .skillbar -->
+						<div class="skillbar clearfix" data-percent="{{ office.value }}">
+							<div class="skillbar-title"><span>{{ office.name }}</span></div>
+							<div class="skillbar-bar"></div>
+							<div class="skill-bar-percent">{{ office.value }}</div>
+						</div>
+						<!-- /.skillbar -->
+					{% endfor %}
 				</div>
 
 				<!-- .title_content -->
@@ -237,38 +169,15 @@
 				<!-- /.title_content -->
 
 				<div class="skills">
-				<!-- .skillbar -->
-				<div class="skillbar clearfix" data-percent="90%">
-					<div class="skillbar-title"><span>English</span></div>
-					<div class="skillbar-bar"></div>
-					<div class="skill-bar-percent">90%</div>
-				</div>
-				<!-- /.skillbar -->
-
-				<!-- .skillbar -->
-				<div class="skillbar clearfix " data-percent="80%">
-					<div class="skillbar-title"><span>French</span></div>
-					<div class="skillbar-bar"></div>
-					<div class="skill-bar-percent">80%</div>
-				</div>
-				<!-- /.skillbar -->
-
-				<!-- .skillbar -->
-				<div class="skillbar clearfix " data-percent="50%">
-					<div class="skillbar-title"><span>Spanish</span></div>
-					<div class="skillbar-bar"></div>
-					<div class="skill-bar-percent">50%</div>
-				</div>
-				<!-- /.skillbar -->
-
-				<!-- .skillbar -->
-				<div class="skillbar clearfix " data-percent="60%">
-					<div class="skillbar-title"><span>Swiss</span></div>
-					<div class="skillbar-bar"></div>
-					<div class="skill-bar-percent">60%</div>
-				</div>
-				<!-- /.skillbar -->
-				
+					{% for lang in site.data.skills.languageSkills %}
+						<!-- .skillbar -->
+						<div class="skillbar clearfix" data-percent="{{ lang.value }}">
+							<div class="skillbar-title"><span>{{ lang.name }}</span></div>
+							<div class="skillbar-bar"></div>
+							<div class="skill-bar-percent">{{ lang.value }}</div>
+						</div>
+						<!-- /.skillbar -->
+					{% endfor %}
 				</div>
 				
 				<!-- .title_content -->
@@ -279,38 +188,15 @@
 				<!-- /.title_content -->
 
 				<div class="skills">
-				<!-- .skillbar -->
-				<div class="skillbar clearfix" data-percent="90%">
-					<div class="skillbar-title"><span>Reading</span></div>
-					<div class="skillbar-bar"></div>
-					<div class="skill-bar-percent">95%</div>
-				</div>
-				<!-- /.skillbar -->
-
-				<!-- .skillbar -->
-				<div class="skillbar clearfix " data-percent="80%">
-					<div class="skillbar-title"><span>Biking</span></div>
-					<div class="skillbar-bar"></div>
-					<div class="skill-bar-percent">85%</div>
-				</div>
-				<!-- /.skillbar -->
-
-				<!-- .skillbar -->
-				<div class="skillbar clearfix " data-percent="50%">
-					<div class="skillbar-title"><span>football</span></div>
-					<div class="skillbar-bar"></div>
-					<div class="skill-bar-percent">90%</div>
-				</div>
-				<!-- /.skillbar -->
-
-				<!-- .skillbar -->
-				<div class="skillbar clearfix " data-percent="60%">
-					<div class="skillbar-title"><span>travel</span></div>
-					<div class="skillbar-bar"></div>
-					<div class="skill-bar-percent">80%</div>
-				</div>
-				<!-- /.skillbar -->             
-
+					{% for hobin in site.data.skills.hobbiesAndInterest %}
+						<!-- .skillbar -->
+						<div class="skillbar clearfix" data-percent="{{ hobin.value }}">
+							<div class="skillbar-title"><span>{{ hobin.name }}</span></div>
+							<div class="skillbar-bar"></div>
+							<div class="skill-bar-percent">{{ hobin.value }}</div>
+						</div>
+						<!-- /.skillbar -->
+					{% endfor %}
 				</div>
 
 			</div>
