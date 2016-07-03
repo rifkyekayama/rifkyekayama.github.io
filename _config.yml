@@ -19,9 +19,11 @@ phone: +62878-2193-6074
 address: Jl. KPAD Sriwijaya 1 No. 26 RT.03/08 Kota Cimahi,40524
 
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  <p>I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+
+  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
+
+  <p>Aliquam lobortis nec nibh a blandit. Quisque ultricies pharetra hendrerit. Nunc fringilla sapien eget viverra mollis.</p>
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://rifkyekayama.github.io" # the base hostname & protocol for your site
 

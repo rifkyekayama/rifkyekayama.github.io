@@ -55,13 +55,10 @@
 
 					<div class="portfolio-nav">
 						<ul>                                     
-							{% assign prev = forloop.index %}
-							{% assign next = forloop.index %}
-
 							{% if forloop.first == true %}
 								<li class="prev-link hide_prev"><a href="#" rel="Prev" title="prev"><i class="fa fa-angle-left icon-single"></i></a></li>
 							{% else %}
-								<li class="prev-link"><a href="#" data-post="{{ prev }}" rel="Prev" title="prev"><i class="fa fa-angle-left icon-single"></i></a></li>
+								<li class="prev-link"><a href="#" data-post="{{ portfolio.prev }}" rel="Prev" title="prev"><i class="fa fa-angle-left icon-single"></i></a></li>
 							{% endif %}
 
 							
@@ -69,7 +66,7 @@
 							{% if forloop.last == true %}
 								<li class="next-link hide_next"><a href="#" rel="Next" title="next"><i class="fa fa-angle-right icon-single"></i></a></li>
 							{% else %}
-								<li class="next-link"><a href="#" data-post="{{ next }}" rel="Next" title="next"><i class="fa fa-angle-right icon-single"></i></a></li> 
+								<li class="next-link"><a href="#" data-post="{{ portfolio.next }}" rel="Next" title="next"><i class="fa fa-angle-right icon-single"></i></a></li> 
 							{% endif %}
 						</ul>
 					</div>
