@@ -1,10 +1,8 @@
-<!-- #portfolio_single -->
+#portfolio_single -->
 <div class="overlay_single_portfolio active">
-
 	{% for portfolio in site.data.portfolio %}
 		<div class="single-portfolio" data-id="{{ forloop.index }}">
 			<div class="fc-page-title-breadcrumbs">
-
 				<div class="fc-page-title">
 					<div class="fc-page-title-wrapper">
 
@@ -47,8 +45,26 @@
 
 					<div><strong>Date : </strong><span class="project-terms">{{ portfolio.date }}</span></div>
 					<div><strong>Client : </strong><span class="project-terms">{{ portfolio.client }}</span></div>
-					<div><strong>Category : </strong><a href="#">Website</a> / <a href="#">Corporate</a></div>
-					<div><strong>Skills Used : </strong><a href="#">HTML</a> / <a href="#">Javascript</a></div>
+					<div><strong>Category : </strong>
+						{% assign category = portfolio.category | split: ', ' %}
+						{% for cat in category %}
+							{% if forloop.last == true %}
+								<a href="#">{{ cat }}</a>
+							{% else %}
+								<a href="#">{{ cat }}</a> /
+							{% endif %}
+						{% endfor %}
+					</div>
+					<div><strong>Skills Used : </strong>
+						{% assign skillsUsed = portfolio.skillsUsed | split: ' ' %}
+						{% for skills in skillsUsed %}
+							{% if forloop.last == true %}
+								<a href="#">{{ skills }}</a>
+							{% else %}
+								<a href="#">{{ skills }}</a> /
+							{% endif %}
+						{% endfor %}
+					</div>
 					<div><strong>Client url : </strong><a href="{{ project.clientUrl }}">{{ portfolio.clientUrl }}</a></div>
 
 					<hr>
@@ -70,14 +86,9 @@
 							{% endif %}
 						</ul>
 					</div>
-
 				</div>
-
 			</div>
-
 		</div>
-
 	{% endfor %}
-
 </div>  
-<!-- End #portfolio_single -->
+<!-- End #portfolio_single

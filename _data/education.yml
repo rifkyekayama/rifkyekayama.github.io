@@ -1,11 +1,11 @@
-- degree: Master of Engineering
-  duration: 2011 - 2013
-  university: Name of University
+- degree: Student
+  duration: 2010 - 2012
+  university: Senior High School 1 Cimahi
   desc: >
     Lorem ipsum dolor sit amet, consectetur adipiscing Vivamus sit amet ligula non lectus cursus egestas. Cras erat lorem, fringilla quis sagittis in, sagittis inNam leo tortor Nam leo tortor Vivamus.
 
-- degree: Bachelor of Engineering
-  duration: 2010 - 2011
-  university: Name of University
+- degree: Bachelor of Computer Science
+  duration: 2012 - 2016
+  university: University of Jenderal Achmad Yani
   desc: >
     Lorem ipsum dolor sit amet, consectetur adipiscing Vivamus sit amet ligula non lectus cursus egestas. Cras erat lorem, fringilla quis sagittis in, sagittis inNam leo tortor Nam leo tortor Vivamus.
