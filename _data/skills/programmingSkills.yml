@@ -1,3 +1,9 @@
+- name: Java Android
+  value: 80%
+
+- name: Swift
+  value: 90%
+
 - name: Java
   value: 90%
 
@@ -21,6 +27,3 @@
 
 - name: Server Scripting
   value: 60%
-
-- name: Java Android
-  value: 80%
