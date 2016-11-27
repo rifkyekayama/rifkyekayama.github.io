@@ -1,39 +1,30 @@
 <!DOCTYPE html>
-<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if IE 9 ]><html class="ie ie9" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<html lang="en">
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 
 	{% include head.html %}
 
 	<body>
 
-		<!--[if lt IE 7]>
-				<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-		<![endif]-->
-
-		<!-- Laoding page  -->
-		<div class="preloader">
-			<div class="spinner">
-				<div class="dot1"></div>
-				<div class="dot2"></div>
+		<!--==========================================
+						 PAGE LOADER
+		===========================================-->
+		<div id="page-loader">
+			<div class="animated bounceInDown">
+				<div class="spinner"></div>
+			</div>
+			<div class="text-div text-center animated zoomIn">
+				<p class="text-uppercase">INTRODUCING</p>
+				<!-- Name Only -->
+				<h6 class="text-uppercase">JOHN ROBERT SMITH</h6>
 			</div>
 		</div>
-		<!-- End Laoding page  -->
 
-		<!-- #wrappers -->
-		<div id="wrappers">
+		{{ content }}
+		
+		{% include footer.html %}
 
-			{% include header.html %}
-
-			<!-- #main -->
-			<div id="main">
-
-				{{ content }}
-				
-			</div>
-			<!-- End #main -->
-		</div>
-		<!-- End #wrappers -->
 		{% include foot.html %}
 	</body>
 </html>
