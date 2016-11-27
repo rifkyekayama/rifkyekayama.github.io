@@ -1,0 +1,94 @@
+<!-- #portfolio_single -->
+<div class="overlay_single_portfolio active">
+	{% for portfolio in site.data.portfolio %}
+		<div class="single-portfolio" data-id="{{ forloop.index }}">
+			<div class="fc-page-title-breadcrumbs">
+				<div class="fc-page-title">
+					<div class="fc-page-title-wrapper">
+
+						<div class="fc-page-title-captions">
+							<h1 class="entry-title">{{ portfolio.name }}</h1>
+						</div>
+
+						<a class="btn_close_port" href="#"><i class="fa fa-close"></i></a>
+
+					</div>
+				</div>
+
+			</div>
+
+			<div class="row no-marg">
+				<div class="col-md-12 post-image-wrap">
+					<img src="images/portfolio/{{ portfolio.img_full }}" alt="" />
+				</div>
+			</div>
+
+
+			<div class="content row no-marg">
+				<div class="col-md-8 content-split portfolio-split">
+
+					<div class="title-section" style="margin-left: 0;">
+					  <h2 class="section_title">Project Description</h2>
+					  <div class="sep2"></div>
+					</div>
+
+					{{ portfolio.desc }}
+
+				</div>
+
+				<div class="col-md-4 sidebar portfolio-sidebar">
+
+					<div class="title-section" style="margin-left: 0;">
+					  <h2 class="section_title">Project Details</h2>
+					  <div class="sep2"></div>
+					</div>
+
+					<div><strong>Date : </strong><span class="project-terms">{{ portfolio.date }}</span></div>
+					<div><strong>Client : </strong><span class="project-terms">{{ portfolio.client }}</span></div>
+					<div><strong>Category : </strong>
+						{% assign category = portfolio.category | split: ', ' %}
+						{% for cat in category %}
+							{% if forloop.last == true %}
+								<a href="#">{{ cat }}</a>
+							{% else %}
+								<a href="#">{{ cat }}</a> /
+							{% endif %}
+						{% endfor %}
+					</div>
+					<div><strong>Skills Used : </strong>
+						{% assign skillsUsed = portfolio.skillsUsed | split: ' ' %}
+						{% for skills in skillsUsed %}
+							{% if forloop.last == true %}
+								<a href="#">{{ skills }}</a>
+							{% else %}
+								<a href="#">{{ skills }}</a> /
+							{% endif %}
+						{% endfor %}
+					</div>
+					<div><strong>Client url : </strong><a href="{{ project.clientUrl }}">{{ portfolio.clientUrl }}</a></div>
+
+					<hr>
+
+					<div class="portfolio-nav">
+						<ul>                                     
+							{% if forloop.first == true %}
+								<li class="prev-link hide_prev"><a href="#" rel="Prev" title="prev"><i class="fa fa-angle-left icon-single"></i></a></li>
+							{% else %}
+								<li class="prev-link"><a href="#" data-post="{{ portfolio.prev }}" rel="Prev" title="prev"><i class="fa fa-angle-left icon-single"></i></a></li>
+							{% endif %}
+
+							
+							<li class="all-items"><a href="#" title="All"><i class="fa fa-th-large icon-single"></i></a></li>
+							{% if forloop.last == true %}
+								<li class="next-link hide_next"><a href="#" rel="Next" title="next"><i class="fa fa-angle-right icon-single"></i></a></li>
+							{% else %}
+								<li class="next-link"><a href="#" data-post="{{ portfolio.next }}" rel="Next" title="next"><i class="fa fa-angle-right icon-single"></i></a></li> 
+							{% endif %}
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	{% endfor %}
+</div>  
+<!-- End #portfolio_single

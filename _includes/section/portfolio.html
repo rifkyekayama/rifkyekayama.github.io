@@ -1,0 +1,50 @@
+<!-- #portfolio -->
+<section id="portfolio" class="layers">
+	<h2 style="display:none">portfolio</h2>
+	<!-- .page_content -->
+	<div class="page_content">
+		<!-- .portfolios -->
+		<div id="portfolios" class="portfolios">
+			<!-- .grid-wrap -->
+			<div class="grid-wrap">
+				<!-- #filters -->
+				<ul id="genre-filter" class="clearfix">
+					<li class="label_filter">Filter</li>
+					<li><span class="filter active" data-filter="logo posters photography webdesign">All</span></li>
+					<li><span class="filter" data-filter="logo">Logo</span></li>
+					<li><span class="filter" data-filter="posters">Posters</span></li>
+					<li><span class="filter" data-filter="photography">Photography</span></li>
+					<li><span class="filter" data-filter="webdesign">Webdesign</span></li>
+				</ul>
+				<!-- /#filters -->
+
+				<!-- #portfolioslist -->  
+				<div class="grid" id="portfoliolist">
+
+					{% for portfolio in site.data.portfolio %}
+						{% assign words = portfolio.category | split:', ' %}
+						<div class="view view-first portfolio {% for word in words %}{{ word | append: ' ' }}{% endfor %}" data-cat="{% for word in words %}{{ word | append: ' ' }}{% endfor %}">
+							<img src="images/portfolio/thumb/{{ portfolio.img_thumb }}" alt="img02"/>
+							<div class="mask" style="background-color: rgba(0, 0, 0, 0.7);">
+								<h4>{{ portfolio.name }}</h4>
+								<p><span class="cat-portfolio">{{ portfolio.category }}</span></p>
+
+								<div class="portf_detail">
+									<a href="images/portfolio/{{ portfolio.img_full }}" data-gal ="portfolio" class="info open-imag">
+										<i class="fa fa-search"></i>
+									</a>
+
+									<a href="#" class="info external open_port_detail" data-id="{{ forloop.index }}">
+										<i class="fa fa-link"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					{% endfor %}
+				</div><!-- /portfoliolist --> 
+			</div><!-- /grid-wrap -->
+		</div><!-- /portfolios -->  
+	</div>
+	<!-- .page_content -->
+</section>
+<!-- End #portfolio -->

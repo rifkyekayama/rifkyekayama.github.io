@@ -1,0 +1,81 @@
+<!-- #profile -->
+<section id="profile" class="layers">
+	<h2 style="display:none">profile</h2>
+	<!-- .page_content -->
+	<div class="page_content">
+		<!-- .block-header -->
+		<div class="block-header">
+			<!-- .my_profile -->
+			<div class="row no-marg my_profile">
+				<div class="col-xs-12 col-md-6 no-padd image_profile">
+					<!--<div class="overfly"></div>-->  
+				</div>
+
+				<div class="col-xs-12 col-md-6 no-padd image_profile_resp">
+					<div class="home_profile_resp"> 
+						<img src="images/profile_img.jpg" alt=""> 
+					</div>
+				</div>
+
+				<!-- .info_profile -->
+				<div class="col-xs-12 col-md-6 no-padd info_profile">
+
+					<!-- .bg_desc -->
+					<div class="bg_desc clearfix">
+						<div class="inner-text">
+							<h2>I am {{ site.name }}</h2>
+							<small class="myjob">web developer</small>
+
+							<div class="feature-desc">
+								{{ site.description }}
+							</div> 
+
+							<div class="signature text-right">
+								<div class="inner">
+									<img src="images/signature.png" alt="Signature">
+									<cite class="name">{{ site.name }}</cite>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- End .bg_desc -->
+
+					<!-- .bg_info -->
+					<div class="bg_info clearfix">
+						<div class="inner-text">
+							<ul>
+								<li class="user_name"><strong><i class="fa fa-user"></i>Name</strong> : {{ site.name }}</li>
+								<li><strong><i class="fa fa-calendar"></i>Birthdate</strong> : {{ site.birthdate }}</li>
+								<li><strong><i class="fa fa-phone"></i>Phone</strong> : {{ site.phone }}</li>
+								<li><strong><i class="fa fa-whatsapp"></i>Whatsapp</strong> : {{ site.phone }}</li>
+								<li><strong><i class="fa fa-skype"></i>Skype</strong> : {{ site.skype_username }}</li>
+								<li><strong><i class="fa fa-envelope"></i>Email</strong> : {{ site.email }}</li>
+								<li><strong><i class="fa fa-globe"></i>Website</strong> : <a href="{{ site.url }}" target="_blank">{{ site.url }}</a></li>
+								<li><strong><i class="glyphicon glyphicon-map-marker"></i>Address</strong> : {{ site.address }}</li>
+							</ul>
+						</div>
+					</div>
+					<!-- End .bg_info -->
+
+					<!-- .header_social_ul -->
+					<div class="social-ul bg_social" id="profile_social_ul">
+						<ul>
+							<li class="social-twitter"><a href="{{ site.twitter_link }}" target="_blank" title="" data-toggle="tooltip" data-original-title="Twitter"><i class="fa fa-twitter"></i></a></li>
+							<li class="social-facebook"><a href="{{ site.facebook_link }}" target="_blank" title="" data-toggle="tooltip" data-original-title="Facebook"><i class="fa fa-facebook"></i></a></li>
+							<li class="social-google"><a href="{{ site.googleplus_link }}" target="_blank" title="" data-toggle="tooltip" data-original-title="Google Plus"><i class="fa fa-google-plus"></i></a></li>
+							<li class="social-linkedin"><a href="{{ site.linkedin_link }}" target="_blank" title="" data-toggle="tooltip" data-original-title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+							<li class="social-instagram"><a href="{{ site.instagram_link }}" target="_blank" title="" data-toggle="tooltip" data-original-title="Instagram"><i class="fa fa-instagram"></i></a></li>
+							<li class="social-skype"><a onclick="Skype.tryAnalyzeSkypeUri('call', '0');" href="skype:{{ site.skype_username }}?call" title="" data-toggle="tooltip" data-original-title="Skype"><i class="fa fa-skype"></i></a></li>
+						</ul>
+					</div>
+					<!-- End .header_social_ul -->
+				</div>
+				<!-- End .info_profile -->
+			</div>
+			<!-- End .my_profile -->
+		</div>
+		<!-- End .block-header -->
+	</div>
+	<!-- End .page_content -->
+</section>
+<!-- End #about -->
