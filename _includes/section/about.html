@@ -8,33 +8,30 @@
 
                 <!-- Profile Picture [Square] -->
                 <div id="profile" class="center-block">
-                    <img src="images/profile-pic.png">
+                    <img src="images/{{ site.photo_profile }}">
                 </div>
 
                 <!-- Social Links -->
                 <div id="intro-div" class="card content-wrapper">
                     <ul class="text-center list-inline">
-                        <li><a href="#0" target="_blank"><i class="ion-social-facebook"></i></a></li>
-                        <li><a href="#0" target="_blank"><i class="ion-social-twitter"></i></a></li>
-                        <li><a href="#0" target="_blank"><i class="ion-social-linkedin"></i></a></li>
-                        <li><a href="#0" target="_blank"><i class="ion-social-googleplus"></i></a></li>
-                        <li><a href="#0" target="_blank"><i class="ion-social-instagram"></i></a></li>
+                        <li><a href="{{ site.facebook_link }}" target="_blank"><i class="ion-social-facebook"></i></a></li>
+                        <li><a href="{{ site.twitter_link }}" target="_blank"><i class="ion-social-twitter"></i></a></li>
+                        <li><a href="{{ site.linkedin_link }}" target="_blank"><i class="ion-social-linkedin"></i></a></li>
+                        <li><a href="{{ site.googleplus_link }}" target="_blank"><i class="ion-social-googleplus"></i></a></li>
+                        <li><a href="{{ site.instagram_link }}" target="_blank"><i class="ion-social-instagram"></i></a></li>
+                        <li><a onclick="Skype.tryAnalyzeSkypeUri('call', '0');" href="skype:{{ site.skype_username }}?call" target="_blank"><i class="ion-social-skype"></i></a></li>
                     </ul>
 
                     <!-- Some Intro About You -->
                     <p class="text-center">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis et tortor ac tincidunt.
-                        In euismod iaculis lobortis. Vestibulum posuere molestie ipsum vel sollicitudin. Vestibulum
-                        venenatis pharetra mi, ut vestibulum elit ultricies a. Vestibulum at mollis ex, ac consectetur
-                        massa. Donec nunc dui, laoreet a nibh et, semper tincidunt nunc. Donec ac posuere tellus.
-                        Pellentesque tempus suscipit velit sit amet bibendum.
+                        {{ site.description }}
                     </p>
 
                     <div class="row">
                         <!-- Download & Contact Button -->
                         <div class="col col-xs-12 col-sm-12 col-md-12 text-center">
                             <!-- Your CV File -->
-                            <a href="cv/cv-file.docx" download="cv-file.docx" class="btn waves-effect waves-light btn-primary custom-btn">Download CV</a>
+                            <a href="cv/{{ site.cv }}" download="cv-file.docx" class="btn waves-effect waves-light btn-primary custom-btn">Download CV</a>
                             <a href="#contact" class="btn waves-effect waves-light btn-primary custom-btn">Contact Me</a>
                         </div>
                     </div>

@@ -1,20 +1,17 @@
+- name: PHP
+  value: 95%
+
+- name: Laravel 5.3
+  value: 93%
+
 - name: Java Android
   value: 80%
-
-- name: Swift
-  value: 90%
 
 - name: Java
   value: 90%
 
-- name: PHP
-  value: 95%
-
 - name: Visual Basic.NET
   value: 80%
-
-- name: Laravel
-  value: 87%
 
 - name: Ruby on Rails
   value: 40%

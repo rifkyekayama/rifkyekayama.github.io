@@ -1,94 +1,94 @@
 <!--==========================================
-                    CONTACT
+					CONTACT
 ===========================================-->
 <section id="contact" class="section">
-    <h4 class="text-uppercase text-center">Contact</h4>
-    <div class="container">
-        <div class="row">
+	<h4 class="text-uppercase text-center">Contact</h4>
+	<div class="container">
+		<div class="row">
 
-            <!-- Contact Info -->
-            <div class="col col-md-5 col-sm-6 col-xs-12">
-                <div class="info card">
+			<!-- Contact Info -->
+			<div class="col col-md-5 col-sm-6 col-xs-12">
+				<div class="info card">
 
-                    <!-- Apply your own info here -->
-                    <ul class="text-center center-block" data-aos="fade" data-aos-delay="200" data-aos-offset="0">
-                        <li>
-                            <i class="ion-android-call center-block"></i>
-                            <span>+880 - 12345 - 67890</span>
-                        </li>
-                        <li>
-                            <i class="ion-ios-printer center-block"></i>
-                            <span>+880 - 12345 - 67890</span>
-                        </li>
-                        <li>
-                            <i class="ion-email center-block"></i>
-                            <span>emailid@domain.com</span>
-                        </li>
-                        <li>
-                            <i class="ion-earth center-block"></i>
-                            <span>websiteaddresslink.com</span>
-                        </li>
-                        <li>
-                            <i class="ion-ios-location center-block"></i>
-                            <span>25/A New Eskaton Road, Maghbazar</span>
-                        </li>
-                    </ul>
+					<!-- Apply your own info here -->
+					<ul class="text-center center-block" data-aos="fade" data-aos-delay="200" data-aos-offset="0">
+						<li>
+							<i class="ion-android-call center-block"></i>
+							<span>{{ site.phone }}</span>
+						</li>
+						<li>
+							<i class="ion-social-whatsapp center-block"></i>
+							<span>{{ site.whatsapp }}</span>
+						</li>
+						<li>
+							<i class="ion-email center-block"></i>
+							<span>{{ site.email }}</span>
+						</li>
+						<li>
+							<i class="ion-social-skype center-block"></i>
+							<span><a onclick="Skype.tryAnalyzeSkypeUri('call', '0');" href="skype:{{ site.skype_username }}?call" target="_blank" style="color: white;">{{ site.skype_username }}</a></span>
+						</li>
+						<li>
+							<i class="ion-ios-location center-block"></i>
+							<span>{{ site.address }}</span>
+						</li>
+					</ul>
 
-                </div>
-            </div>
-            <!-- ./Contact Info -->
+				</div>
+			</div>
+			<!-- ./Contact Info -->
 
-            <!-- Contact Form -->
-            <div class="col col-md-7 col-sm-6 col-xs-12">
-                <div  class="contact card">
+			<!-- Contact Form -->
+			<div class="col col-md-7 col-sm-6 col-xs-12">
+				<div  class="contact card">
 
-                    <form id="contact-form" name="contact-form" role="form">
-                        <div class="input-field">
-                            <input  id="name" name="name" type="text" class="validate" required>
-                            <label for="name">Name</label>
-                        </div>
-                        <div class="input-field">
-                            <input id="subject" name="subject" type="text" class="validate" required>
-                            <label for="subject">Subject</label>
-                        </div>
-                        <div class="input-field">
-                            <input id="email" name="email" type="email" class="validate" required>
-                            <label for="email">Email</label>
-                        </div>
-                        <div class="input-field">
-                            <textarea id="textarea" name="message" class="materialize-textarea" required></textarea>
-                            <label for="textarea">Massage</label>
-                        </div>
-                        <div class="row">
-                            <div class="col col-md-12 col-sm-12 col-xs-12 text-center">
-                                <button type="submit" id="submit" name="submit-data" value="Submit" class="btn waves-effect waves-light btn-primary custom-btn">
-                                    <!-- Button value here -->
-                                    <i class="ion-ios-paperplane"></i>Send</button>
-                            </div>
+					<form id="contact-form" name="contact-form" role="form">
+						<div class="input-field">
+							<input  id="name" name="name" type="text" class="validate" required>
+							<label for="name">Name</label>
+						</div>
+						<div class="input-field">
+							<input id="subject" name="subject" type="text" class="validate" required>
+							<label for="subject">Subject</label>
+						</div>
+						<div class="input-field">
+							<input id="email" name="email" type="email" class="validate" required>
+							<label for="email">Email</label>
+						</div>
+						<div class="input-field">
+							<textarea id="textarea" name="message" class="materialize-textarea" required></textarea>
+							<label for="textarea">Massage</label>
+						</div>
+						<div class="row">
+							<div class="col col-md-12 col-sm-12 col-xs-12 text-center">
+								<button type="submit" id="submit" name="submit-data" value="Submit" class="btn waves-effect waves-light btn-primary custom-btn">
+									<!-- Button value here -->
+									<i class="ion-ios-paperplane"></i>Send</button>
+							</div>
 
-                            <!-- Message Sent and Error info -->
-                            <div id="snackbar">Your Message is sent</div>
-                            <div id="fail-snackbar">Something is going wrong, Please try again</div>
-                        </div>
-                    </form>
+							<!-- Message Sent and Error info -->
+							<div id="snackbar">Your Message is sent</div>
+							<div id="fail-snackbar">Something is going wrong, Please try again</div>
+						</div>
+					</form>
 
-                </div>
-            </div>
-            <!-- ./Contact Form -->
+				</div>
+			</div>
+			<!-- ./Contact Form -->
 
-        </div>
+		</div>
 
-        <!-- Location MAP -->
-        <div class="row">
-            <div class="col col-md-12 col-sm-12 col-xs-12">
-                <div id="google-map" data-aos="zoom-in" data-aos-delay="0" data-aos-offset="0">
-                    <div id="map-container"></div>
-                    <div id="cd-zoom-in" class="custom-btn"><i class="material-icons text-center">add</i></div>
-                    <div id="cd-zoom-out" class="custom-btn"><i class="material-icons text-center">remove</i></div>
-                    <!-- Your address here -->
-                    <address class="text-center">25/A New Eskaton Road, Maghbazar, Dhaka 1000, Bangladesh</address>
-                </div>
-            </div>
-        </div>
-    </div>
+		<!-- Location MAP -->
+		<div class="row">
+			<div class="col col-md-12 col-sm-12 col-xs-12">
+				<div id="google-map" data-aos="zoom-in" data-aos-delay="0" data-aos-offset="0">
+					<div id="map-container"></div>
+					<div id="cd-zoom-in" class="custom-btn"><i class="material-icons text-center">add</i></div>
+					<div id="cd-zoom-out" class="custom-btn"><i class="material-icons text-center">remove</i></div>
+					<!-- Your address here -->
+					<address class="text-center">25/A New Eskaton Road, Maghbazar, Dhaka 1000, Bangladesh</address>
+				</div>
+			</div>
+		</div>
+	</div>
 </section>

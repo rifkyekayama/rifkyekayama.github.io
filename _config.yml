@@ -10,21 +10,19 @@ title: Rifky Ekayama | Professional Programmer and Web Developer
 tagline: > 
   "Mobile & Web Developer"
 resume_hard_copy: #
-img_home_sidebar: profile_img_baru.jpg
+photo_profile: profile_img_baru.jpg
 
 #Identity
 name: Rifky Ekayama
 birthdate: February 09, 1994
 email: rifky.ekayama@gmail.com
 phone: +62878-2193-6074
+whatsapp: +62878-2193-6074
 address: Jl. KPAD Sriwijaya 1 No. 26 RT.03/08 Kota Cimahi,40524
+cv: cv-file.docx
 
 description: > # this means to ignore newlines until "baseurl:"
-  <p>I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
-
-  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
-
-  <p>Aliquam lobortis nec nibh a blandit. Quisque ultricies pharetra hendrerit. Nunc fringilla sapien eget viverra mollis.</p>
+ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis et tortor ac tincidunt.In euismod iaculis lobortis. Vestibulum posuere molestie ipsum vel sollicitudin. Vestibulum venenatis pharetra mi, ut vestibulum elit ultricies a. Vestibulum at mollis ex, ac consectetur massa. Donec nunc dui, laoreet a nibh et, semper tincidunt nunc. Donec ac posuere tellus. Pellentesque tempus suscipit velit sit amet bibendum.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://rifkyekayama.github.io" # the base hostname & protocol for your site
 

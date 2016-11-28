@@ -1,9 +1,11 @@
 - degree: Student
   duration: 2010 - 2012
   university: Senior High School 1 Cimahi
+  result: (-)
   desc: >
 
-- degree: Bachelor of Computer Science
+- degree: Bachelor of Computer Science & engineering
   duration: 2012 - 2016
   university: University of Jenderal Achmad Yani
+  result: 3.59 out of 4.00
   desc: >

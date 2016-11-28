@@ -1,107 +1,29 @@
 <!--==========================================
-                   SERVICES
+				   SERVICES
 ===========================================-->
 <section id="services" class="section">
-    <h4 class="text-uppercase text-center">Services</h4>
-    <div class="container">
-        <ul class="row">
+	<h4 class="text-uppercase text-center">Services</h4>
+	<div class="container">
+		<ul class="row">
 
-            <!-- 1st service -->
-            <li class="col col-md-4 col-sm-6 col-xs-12">
-                <div class="card service-item text-center">
-                    <!-- Edit icon and title here -->
-                    <i class="ion-social-android" data-aos="fade" data-aos-delay="300" data-aos-offset="0"></i>
-                    <h6 class="text-capitalize">Android Application</h6>
-                    <!-- service info here -->
-                    <p class="text-center">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis et tortor ac tincidunt.
-                        In euismod iaculis lobortis. Vestibulum posuere molestie ipsum vel. Vestibulum
-                        venenatis pharetra mi, ut vestibulum elit ultricies.
-                    </p>
-                </div>
-            </li>
-            <!-- ./1st service -->
+			{% for service in site.data.services %}
 
-            <!-- 2nd service -->
-            <li class="col col-md-4 col-sm-6 col-xs-12">
-                <div class="card service-item text-center">
-                    <!-- Edit icon and title here -->
-                    <i class="ion-code" data-aos="fade" data-aos-delay="300" data-aos-offset="0"></i>
-                    <h6 class="text-capitalize">Web Development</h6>
-                    <!-- service info here -->
-                    <p class="text-center">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis et tortor ac tincidunt.
-                        In euismod iaculis lobortis. Vestibulum posuere molestie ipsum vel. Vestibulum
-                        venenatis pharetra mi, ut vestibulum elit ultricies.
-                    </p>
-                </div>
-            </li>
-            <!-- ./2nd service -->
+				<!-- 1st service -->
+				<li class="col col-md-4 col-sm-6 col-xs-12">
+					<div class="card service-item text-center">
+						<!-- Edit icon and title here -->
+						<i class="{{ service.ion-icon }}" data-aos="fade" data-aos-delay="300" data-aos-offset="0"></i>
+						<h6 class="text-capitalize">{{ service.name }}</h6>
+						<!-- service info here -->
+						<p class="text-center">
+							{{ service.desc }}
+						</p>
+					</div>
+				</li>
+				<!-- ./1st service -->
 
-            <!-- 3rd service -->
-            <li class="col col-md-4 col-sm-6 col-xs-12">
-                <div class="card service-item text-center">
-                    <!-- Edit icon and title here -->
-                    <i class="ion-social-apple" data-aos="fade" data-aos-delay="300" data-aos-offset="0"></i>
-                    <h6 class="text-capitalize">IOS Application</h6>
-                    <!-- service info here -->
-                    <p class="text-center">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis et tortor ac tincidunt.
-                        In euismod iaculis lobortis. Vestibulum posuere molestie ipsum vel. Vestibulum
-                        venenatis pharetra mi, ut vestibulum elit ultricies.
-                    </p>
-                </div>
-            </li>
-            <!-- ./3rd service -->
+			{% endfor %}
 
-            <!-- 4th service -->
-            <li class="col col-md-4 col-sm-6 col-xs-12">
-                <div class="card service-item text-center">
-                    <!-- Edit icon and title here -->
-                    <i class="ion-cloud" data-aos="fade" data-aos-delay="300" data-aos-offset="0"></i>
-                    <h6 class="text-capitalize">Cloud Computing</h6>
-                    <!-- service info here -->
-                    <p class="text-center">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis et tortor ac tincidunt.
-                        In euismod iaculis lobortis. Vestibulum posuere molestie ipsum vel. Vestibulum
-                        venenatis pharetra mi, ut vestibulum elit ultricies.
-                    </p>
-                </div>
-            </li>
-            <!-- ./5th service -->
-
-            <!-- 5th service -->
-            <li class="col col-md-4 col-sm-6 col-xs-12">
-                <div class="card service-item text-center">
-                    <!-- Edit icon and title here -->
-                    <i class="ion-paintbrush" data-aos="fade" data-aos-delay="300" data-aos-offset="0"></i>
-                    <h6 class="text-capitalize">UI/UX Design</h6>
-                    <!-- service info here -->
-                    <p class="text-center">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis et tortor ac tincidunt.
-                        In euismod iaculis lobortis. Vestibulum posuere molestie ipsum vel. Vestibulum
-                        venenatis pharetra mi, ut vestibulum elit ultricies.
-                    </p>
-                </div>
-            </li>
-            <!-- ./5th service -->
-
-            <!-- 6th service -->
-            <li class="col col-md-4 col-sm-6 col-xs-12">
-                <div class="card service-item text-center">
-                    <!-- Edit icon and title here -->
-                    <i class="ion-settings" data-aos="fade" data-aos-delay="300" data-aos-offset="0"></i>
-                    <h6 class="text-capitalize">Troubleshooting</h6>
-                    <!-- service info here -->
-                    <p class="text-center">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis et tortor ac tincidunt.
-                        In euismod iaculis lobortis. Vestibulum posuere molestie ipsum vel. Vestibulum
-                        venenatis pharetra mi, ut vestibulum elit ultricies.
-                    </p>
-                </div>
-            </li>
-            <!-- ./6th service -->
-
-        </ul>
-    </div>
+		</ul>
+	</div>
 </section>

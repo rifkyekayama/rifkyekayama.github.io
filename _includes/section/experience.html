@@ -10,93 +10,30 @@
 				<!-- Timeline -->
 				<div class="timeline center-block">
 					<ul>
-						<li class="card" data-aos="fade-up">
-							<i class="title-icon fa fa-circle"></i>
-							<div class="timeline-content">
 
-								<!-- Heading -->
-								<div class="timeline-header">
-									<h3 class="text-capitalize">Chief Project Manager</h3>
+						{% for exp in site.data.experience %}
+
+							<li class="card" data-aos="fade-up">
+								<i class="title-icon fa fa-circle"></i>
+								<div class="timeline-content">
+
+									<!-- Heading -->
+									<div class="timeline-header">
+										<h3 class="text-capitalize">{{ exp.job }}</h3>
+									</div>
+
+									<!-- Organization and Period -->
+									<p class="sub-heading">{{ exp.company }}</p>
+									<p class="sub-heading">{{ exp.duration }}</p>
+
+									<!-- Job Summary -->
+									<p class="content-p">
+										{{ exp.desc }}
+									</p>
 								</div>
+							</li>
 
-								<!-- Organization and Period -->
-								<p class="sub-heading">Lorem Ipsum Technology - South Africa</p>
-								<p class="sub-heading">January 2012 - December 2015</p>
-
-								<!-- Job Summary -->
-								<p class="content-p">
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-									Atque, facilis quo. Maiores magnam modi ab libero praesentium
-									blanditiis consequatur aspernatur accusantium maxime molestiae sunt ipsa.
-								</p>
-							</div>
-						</li>
-
-						<li class="card" data-aos="fade-up">
-							<i class="title-icon fa fa-circle"></i>
-							<div class="timeline-content">
-
-								<!-- Heading -->
-								<div class="timeline-header">
-									<h3 class="text-capitalize">Senior UX/UI Designer</h3>
-								</div>
-
-								<!-- Organization and Period -->
-								<p class="sub-heading">Lorem Ipsum Technology - South Africa</p>
-								<p class="sub-heading">January 2012 - December 2015</p>
-
-								<!-- Job Summary -->
-								<p class="content-p">
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-									Atque, facilis quo. Maiores magnam modi ab libero praesentium
-									blanditiis consequatur aspernatur accusantium maxime molestiae sunt ipsa.
-								</p>
-							</div>
-						</li>
-
-						<li class="card" data-aos="fade-up">
-							<i class="title-icon fa fa-circle"></i>
-							<div class="timeline-content">
-
-								<!-- Heading -->
-								<div class="timeline-header">
-									<h3 class="text-capitalize">Chief Project Manager</h3>
-								</div>
-
-								<!-- Organization and Period -->
-								<p class="sub-heading">Lorem Ipsum Technology - South Africa</p>
-								<p class="sub-heading">January 2012 - December 2015</p>
-
-								<!-- Job Summary -->
-								<p class="content-p">
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-									Atque, facilis quo. Maiores magnam modi ab libero praesentium
-									blanditiis consequatur aspernatur accusantium maxime molestiae sunt ipsa.
-								</p>
-							</div>
-						</li>
-
-						<li class="card" data-aos="fade-up">
-							<i class="title-icon fa fa-circle"></i>
-							<div class="timeline-content">
-
-								<!-- Heading -->
-								<div class="timeline-header">
-									<h3 class="text-capitalize">Senior UX/UI Designer</h3>
-								</div>
-
-								<!-- Organization and Period -->
-								<p class="sub-heading">Lorem Ipsum Technology - South Africa</p>
-								<p class="sub-heading">January 2012 - December 2015</p>
-
-								<!-- Job Summary -->
-								<p class="content-p">
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-									Atque, facilis quo. Maiores magnam modi ab libero praesentium
-									blanditiis consequatur aspernatur accusantium maxime molestiae sunt ipsa.
-								</p>
-							</div>
-						</li>
+						{% endfor %}
 
 					</ul>
 				</div>
