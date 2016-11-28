@@ -1,0 +1,43 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: Rifky Ekayama | Professional Programmer and Web Developer
+tagline: > 
+  "Mobile & Web Developer"
+resume_hard_copy: #
+img_home_sidebar: profile_img_baru.jpg
+
+#Identity
+name: Rifky Ekayama
+birthdate: February 09, 1994
+email: rifky.ekayama@gmail.com
+phone: +62878-2193-6074
+address: Jl. KPAD Sriwijaya 1 No. 26 RT.03/08 Kota Cimahi,40524
+
+description: > # this means to ignore newlines until "baseurl:"
+  <p>I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+
+  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
+
+  <p>Aliquam lobortis nec nibh a blandit. Quisque ultricies pharetra hendrerit. Nunc fringilla sapien eget viverra mollis.</p>
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://rifkyekayama.github.io" # the base hostname & protocol for your site
+
+#Social Link
+facebook_link: https://web.facebook.com/rifky.ekayama
+twitter_link: https://twitter.com/RifkyEkayama
+linkedin_link: http://id.linkedin.com/in/rifkyekayama
+googleplus_link: https://plus.google.com/103502971739568065625
+instagram_link: https://www.instagram.com/rifkyekayama/
+skype_username: rifky.ekayama
+github_link: https://github.com/rifkyekayama
+gitlab_link: https://gitlab.com/u/rifky.ekayama
+bitbucket_link: https://bitbucket.org/rifkyekayama/
+
+# Build settings
+markdown: kramdown
