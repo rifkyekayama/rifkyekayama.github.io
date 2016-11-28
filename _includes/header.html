@@ -1,89 +1,76 @@
-<!-- #header -->
-<header id="header">
+<!--==========================================
+                 HEADER
+===========================================-->
+<div id="header" class="shadow">
+    <!-- Navigation -->
+    <nav>
+        <div class="nav nav-wrapper navbar-fixed-top">
+            <div class="container-fluid">
 
-	<div class="menu_closed" id="menu_closed" title="Close Menu" data-toggle="tooltip">
-		<i class="fa fa-times"></i>
-	</div>
+                <!-- Menu Option -->
+                <ul class="nav-justified hide-on-med-and-down">
+                    <li><a href="#header">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolios">Portfolios</a></li>
+                    <li><a href="#achievement">Achievement</a></li>
+                    <li><a href="#publications">Publications</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#clients">Clients</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#interest">Interest</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
 
-	<div class="logo">
-		<a href="#"><img src="images/{{ site.img_home_sidebar }}" width="122" height="122" alt="Logo"></a>
-	</div>
+                <a href="#0" data-activates="nav-mobile" id="nav-btn" class="button-collapse nav-icon">
+                    <i class="ion-navicon"></i></a>
 
-	<h4 class="tagline">{{ site.tagline }}</h4>
+                <!-- Side Nav -->
+                <div id="side-nav">
+                    <div id="nav-header">
+                        <div id="nav-profile" class="center-block">
 
+                            <!-- Profile Picture [Square] -->
+                            <img src="images/profile-pic.png">
+                        </div>
+                        <h6 class="text-center text-capitalize">John Robert Smith</h6>
+                    </div>
 
-	<!-- .navigation -->  
-	<nav class="navigation">
-		<ul class="list-unstyled">
+                    <div id="nav-link-wrapper">
 
-			<li class="home active">
-				<a href="#home" class="home link_menu"><i class="fa fa-home icon_menus"></i><span class="nav-label">home</span></a>
-			</li>
-			<li class="profile">
-				<a href="#profile" class="profile link_menu"><i class="fa fa-user icon_menus"></i><span class="nav-label">profile</span></a>
-			</li>
+                        <!-- Side Menu Option -->
+                        <ul>
+                            <li><a class="nav-link" href="#header">About</a></li>
+                            <li><a class="nav-link" href="#experience">Experience</a></li>
+                            <li><a class="nav-link" href="#skills">Skills</a></li>
+                            <li><a class="nav-link" href="#education">Education</a></li>
+                            <li><a class="nav-link" href="#services">Services</a></li>
+                            <li><a class="nav-link" href="#portfolios">Portfolios</a></li>
+                            <li><a class="nav-link" href="#achievement">Achievement</a></li>
+                            <li><a class="nav-link" href="#publications">Publications</a></li>
+                            <li><a class="nav-link" href="#blog">Blog</a></li>
+                            <li><a class="nav-link" href="#clients">Clients</a></li>
+                            <li><a class="nav-link" href="#pricing">Pricing</a></li>
+                            <li><a class="nav-link" href="#interest">Interest</a></li>
+                            <li><a class="nav-link" href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
 
-			{% comment %}
-			<li class="service">
-				<a href="#service" class="service link_menu"><i class="fa fa-cog icon_menus"></i> <span class="nav-label">services</span></a>
-			</li>
-			{% endcomment %}
+                </div>
+                <!-- ./Side Nav -->
 
-			<li class="resume">
-				<a href="#resume" class="resume link_menu"><i class="fa fa-tasks icon_menus"></i> <span class="nav-label">resume</span></a>
-			</li>
-			<li class="portfolio">
-				<a href="#portfolio" class="portfolio link_menu"><i class="fa fa-briefcase icon_menus"></i> <span class="nav-label">portfolio</span></a>
-			</li>
-			<!-- <li class="blog">
-				<a href="#blog" class="blog link_menu"><i class="fa fa-bullhorn icon_menu"></i> <span class="nav-label">blog</span></a>
-			</li> -->
-			<li class="contact">
-				<a href="#contact" class="contact link_menu"><i class="fa fa-paper-plane icon_menus"></i> <span class="nav-label">contact</span></a>
-			</li>
+                <!-- Side Nav Mask -->
+                <div id="side-nav-mask"></div>
 
-		</ul>
-	</nav>
-	<!-- End .navigation -->  
+            </div>
+        </div>
+    </nav>
 
-	<!-- #header_social_ul -->  
-	<div class="social-ul" id="header_social_ul">
-		<ul>
-			<li class="social-twitter"><a href="{{ site.twitter_link }}" target="_blank" title="" data-toggle="tooltip" data-original-title="Twitter"><i class="fa fa-twitter"></i></a></li>
-			<li class="social-facebook"><a href="{{ site.facebook_link }}" target="_blank" title="" data-toggle="tooltip" data-original-title="Facebook"><i class="fa fa-facebook"></i></a></li>
-			<li class="social-google"><a href="{{ site.googleplus_link }}" target="_blank" title="" data-toggle="tooltip" data-original-title="Google Plus"><i class="fa fa-google-plus"></i></a></li>
-			<li class="social-linkedin"><a href="{{ site.linkedin_link }}" target="_blank" title="" data-toggle="tooltip" data-original-title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
-			<li class="social-instagram"><a href="{{ site.instagram_link }}" target="_blank" title="" data-toggle="tooltip" data-original-title="Instagram"><i class="fa fa-instagram"></i></a></li>
-			<li class="social-skype"><a onclick="Skype.tryAnalyzeSkypeUri('call', '0');" href="skype:{{ site.skype_username }}?call" title="" data-toggle="tooltip" data-original-title="Skype"><i class="fa fa-skype"></i></a></li>
-		</ul>
-	</div>
-	<!-- End #header_social_ul -->  
-
-	<!-- .copyright --> 
-	<div class="copyright">
-		<p style="margin-bottom:0;">© 2015.by <a href="http://themeforest.net/user/flexycodes">Flexycodes</a></p>   
-	</div>
-	<!-- End.copyright -->  
-
-</header>
-<!-- End #header -->
-
-<!-- .header-main -->
-<div class="header-main">
-	<div class="content_wrappers">    
-		<div class="logo_wrapper">
-
-			<span class="site_title">
-				<a href="" title="Throne">
-					<img src="images/logo-top.png" alt="FlexyBlog">
-				</a>
-			</span>
-
-		</div>
-
-		<a class="nav-btn menu_close" id="btn_open_menu" href="#"><i class="fa fa-bars"></i></a>
-
-	</div>
-
+    <!-- Name and Status -->
+    <div id="intro" class="container">
+        <h1 class="text-center text-capitalize">{{ site.name }}</h1>
+        <h4 class="text-center text-capitalize">Web Designer & Developer, UX/UI Expert</h4>
+    </div>
 </div>
-<!-- End .header-main -->

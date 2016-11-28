@@ -1,0 +1,29 @@
+<!--==========================================
+				   SERVICES
+===========================================-->
+<section id="services" class="section">
+	<h4 class="text-uppercase text-center">Services</h4>
+	<div class="container">
+		<ul class="row">
+
+			{% for service in site.data.services %}
+
+				<!-- 1st service -->
+				<li class="col col-md-4 col-sm-6 col-xs-12">
+					<div class="card service-item text-center">
+						<!-- Edit icon and title here -->
+						<i class="{{ service.ion-icon }}" data-aos="fade" data-aos-delay="300" data-aos-offset="0"></i>
+						<h6 class="text-capitalize">{{ service.name }}</h6>
+						<!-- service info here -->
+						<p class="text-center">
+							{{ service.desc }}
+						</p>
+					</div>
+				</li>
+				<!-- ./1st service -->
+
+			{% endfor %}
+
+		</ul>
+	</div>
+</section>

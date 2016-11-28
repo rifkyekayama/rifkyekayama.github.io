@@ -1,0 +1,44 @@
+<!--==========================================
+				   EXPERIENCE
+===========================================-->
+<section id="experience" class="section">
+	<h4 class="text-uppercase text-center">Experience</h4>
+	<div class="container">
+		<div class="row">
+			<div class="col col-md-12 col-sm-12 col-xs-12">
+
+				<!-- Timeline -->
+				<div class="timeline center-block">
+					<ul>
+
+						{% for exp in site.data.experience %}
+
+							<li class="card" data-aos="fade-up">
+								<i class="title-icon fa fa-circle"></i>
+								<div class="timeline-content">
+
+									<!-- Heading -->
+									<div class="timeline-header">
+										<h3 class="text-capitalize">{{ exp.job }}</h3>
+									</div>
+
+									<!-- Organization and Period -->
+									<p class="sub-heading">{{ exp.company }}</p>
+									<p class="sub-heading">{{ exp.duration }}</p>
+
+									<!-- Job Summary -->
+									<p class="content-p">
+										{{ exp.desc }}
+									</p>
+								</div>
+							</li>
+
+						{% endfor %}
+
+					</ul>
+				</div>
+				<!-- End of Timeline -->
+			</div>
+		</div>
+	</div>
+</section>
