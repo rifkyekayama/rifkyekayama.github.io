@@ -1,8 +1,8 @@
 - name: PHP
-  value: 95%
+  value: 100%
 
-- name: Laravel 5.3
-  value: 93%
+- name: Laravel
+  value: 96%
 
 - name: Java Android
   value: 80%
@@ -19,8 +19,11 @@
 - name: Python
   value: 20%
 
-- name: Server Configuration
-  value: 80%
+- name: Ubuntu
+  value: 100%
 
-- name: Server Scripting
+- name: GIT
+  value: 100%
+
+- name: Apache
   value: 60%

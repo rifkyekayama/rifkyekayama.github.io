@@ -1,4 +1,5 @@
 <script src="javascript/jquery-2.1.3.min.js"></script>
+<script src="javascript/noty/js/noty/packaged/jquery.noty.packaged.min.js"></script>
 <script src="javascript/aos.min.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCO3E4rPKVUYhCVRaKgLFbtCca2AF-za04"></script>
 <script src="javascript/custom-map.js"></script>
@@ -18,3 +19,20 @@
 
 <!-- Skype Asset -->
 <script type="text/javascript" src="http://www.skypeassets.com/i/scom/js/skype-uri.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		var n = noty({
+			text: 'NOTY - a jquery notification library!',
+			layout: 'topRight',
+			type: 'success',
+			theme: 'relax',
+			timeout: true,
+			animation: {
+				open: 'animated fadeIn', // Animate.css class names
+				close: 'animated fadeOut', // Animate.css class names
+				speed: 500 // unavailable - no need
+			}
+		});
+	});
+</script>
