@@ -8,7 +8,7 @@
 # Site settings
 title: Rifky Ekayama | Professional Programmer and Web Developer
 tagline: > 
-  "Mobile & Web Developer"
+  Web Developer and Freelancer
 resume_hard_copy: #
 photo_profile: profile_img_baru.jpg
 
@@ -19,10 +19,10 @@ email: rifky.ekayama@gmail.com
 phone: +62878-2193-6074
 whatsapp: +62878-2193-6074
 address: Jl. KPAD Sriwijaya 1 No. 26 RT.03/08 Kota Cimahi,40524
-cv: cv-file.docx
+cv: Rifky-Ekayama.pdf
 
 description: > # this means to ignore newlines until "baseurl:"
- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis et tortor ac tincidunt.In euismod iaculis lobortis. Vestibulum posuere molestie ipsum vel sollicitudin. Vestibulum venenatis pharetra mi, ut vestibulum elit ultricies a. Vestibulum at mollis ex, ac consectetur massa. Donec nunc dui, laoreet a nibh et, semper tincidunt nunc. Donec ac posuere tellus. Pellentesque tempus suscipit velit sit amet bibendum.
+ I am passionate about developing web based application using framework such as Laravel Framework , etc. I also interested on networking and server administration. I always follow the development of technology, especially web technology, because I love it.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://rifkyekayama.github.io" # the base hostname & protocol for your site
 

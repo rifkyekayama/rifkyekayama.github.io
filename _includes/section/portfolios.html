@@ -10,11 +10,7 @@
 			for an unfiltered gallery and then the values of your categories to filter between them -->
 			<ul class="text-center simple-filter" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="300">
 				<li class="active-cat" data-filter="all"><a>All</a></li>
-				<li data-filter="1"><a>Creative</a></li>
-				<li data-filter="2"><a>Photography</a></li>
-				<li data-filter="3"><a>Food</a></li>
-				<li data-filter="4"><a>Colorful</a></li>
-				<li data-filter="5"><a>Personal</a></li>
+				<li data-filter="website"><a>Website</a></li>
 			</ul>
 
 			<div class="filtr-container center-block">
@@ -23,7 +19,7 @@
 				{% for portfolio in site.data.portfolio %}
 
 					<!-- 1st Portfolio, Filter Option -->
-					<div class="col col-md-3 col-sm-6 col-xs-12 filtr-item" data-category="1, 5">
+					<div class="col col-md-3 col-sm-6 col-xs-12 filtr-item" data-category="{{ portfolio.category }}">
 						<div class="portfolio card">
 							<figure class="hover-effect">
 								<!-- Portfolio Image -->
