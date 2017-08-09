@@ -1,0 +1,26 @@
+<div class="col-md-4 col-sm-6 resume-boxe masonry">
+	<div class="inner-resume-boxe">
+		<div class="block-icon"><i class="ic-pencil"></i></div>
+		<div class="block-title">
+			<h3 class="title medium">Education</h3>
+		</div>
+		<div class="timeline mt-40">
+			<!-- <div class="edu">
+				<div class="hgroup mb-5">
+					<h4>Bachelor Degree &ndash; Mutation Media </h4>
+					<h6>Feb 2015 &ndash; Nov 2015</h6>
+				</div>
+				<p>Ut enim ad minim veniam, quis nostrud exerc, irure dolor in reprehend.</p>
+			</div> -->
+			{% for education in site.data.education %}
+				<div class="edu">
+					<div class="hgroup mb-5">
+						<h4>{{ education.degree }} &ndash; {{ education.university }}</h4>
+						<h6>{{ education.duration }}</h6>
+					</div>
+					<p>{{ education.desc }}</p>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+</div>
