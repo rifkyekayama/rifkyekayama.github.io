@@ -65,5 +65,5 @@ plugins:
 #   - vendor/ruby/
 
 # Environment variable
-env: development
-minify_html: false
+env: production
+minify_html: true
